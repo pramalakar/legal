@@ -1,0 +1,42 @@
+// >>>----------------------------->>> SIDEBAR STYLES <<<-----------------------------<<< 
+
+// Sidebar Widget Title
+// -----------------------
+$sidebar_widget_title_textcolor: $primary_color;
+
+
+
+// Sidebar Widget Calendar
+// -------------------------
+$sidebar_widget_calendar_caption_textcolor : $primary_color;
+$sidebar_widget_calendar_border_color : $primary_color; 
+$sidebar_widget_calendar_active_date_bgcolor : $primary_color;
+$sidebar_widget_calendar_active_date_textcolor : #fff;
+$sidebar_widget_calendar_th_textcolor: $primary_color;
+$sidebar_widget_calendar_td_textcolor: $primary_color;
+ 
+
+// Sidebar Widget Form Input Border
+// ----------------------------------
+$sidebar_widget_form_input_border_color: $primary_color;
+
+
+
+// Sidebar Widget Menu
+// ----------------------
+$sidebar_widget_menu_border_color: #ddd;
+$sidebar_widget_menu_link_textcolor: $common_link_textcolor;
+$sidebar_widget_menu_link_textcolor_hover: $common_link_textcolor_hover;
+
+
+// Sidebar Search Form
+// -----------------------
+$sidebar_search_form_input_border_color: $primary_color; 
+
+$sidebar_search_form_button_textcolor: #fff;
+$sidebar_search_form_button_bgcolor: $primary_color;
+$sidebar_search_form_button_border_color: $primary_color;
+
+$sidebar_search_form_button_textcolor_hover: $sidebar_search_form_button_textcolor;
+$sidebar_search_form_button_bgcolor_hover: $sidebar_search_form_button_bgcolor;
+$sidebar_search_form_button_border_color_hover: $sidebar_search_form_button_border_color;

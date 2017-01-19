@@ -1,0 +1,96 @@
+/**
+ *  BANNER STYLE
+ *  ---------------
+ */
+
+/* The animation code */
+@keyframes move_down_to_up {
+    from { 
+        -ms-transform: translate(0px, 1000px); /* IE 9 */
+        -webkit-transform: translate(0px, 1000px); /* Safari */
+        transform: translate(0px, 1000px);
+    }
+    to {
+        -ms-transform: translate(0px, 0px); /* IE 9 */
+        -webkit-transform: translate(0px, 0px); /* Safari */
+        transform: translate(0px, 0px);
+    }
+} 
+
+
+.rmd-banner-wrapper {
+    background-color: transparent;
+    position: relative; 
+    background: no-repeat center top; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+    overflow: hidden;
+}
+  
+.rmd-banner-wrapper .rmd-text-content-container {
+    position: relative; 
+    background-color: transparent;
+    width: 100%; 
+    z-index: 2;
+}
+
+
+.rmd-banner-wrapper .rmd-text-content-container .rmd-text-content {
+    font-family: "Lato", Georgia, Times, serif;
+    text-align: center;  
+    font-size: 62px;
+    line-height: 1.25em;
+    text-transform: none;
+    letter-spacing: 0.016129em;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    animation-name: move_down_to_up;
+    animation-duration: 1.5s;
+} 
+
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+    .rmd-banner-wrapper .rmd-text-content-container {
+        padding:80px 30px;
+    }
+    .rmd-banner-wrapper .rmd-text-content-container .rmd-text-content {
+        font-size: 41px;
+    }
+
+}
+
+/* / Small Devices, Tablets /*/
+@media only screen and (min-width : 768px) {
+    .rmd-banner-wrapper .rmd-text-content-container {
+        padding:120px 30px;
+    }
+    .rmd-banner-wrapper .rmd-text-content-container .rmd-text-content {
+        font-size: 48px;
+    }
+
+}
+
+/*/ Medium Devices, Desktops /*/
+@media only screen and (min-width : 992px) {
+    .rmd-banner-wrapper .rmd-text-content-container {
+        padding:160px 30px;
+    }
+    .rmd-banner-wrapper .rmd-text-content-container .rmd-text-content {
+        font-size: 55px;
+    }
+
+}
+
+/*/ Large Devices, Wide Screens /*/
+@media only screen and (min-width : 1200px) {
+    .rmd-banner-wrapper .rmd-text-content-container {
+        padding:200px 30px;
+    }
+    .rmd-banner-wrapper .rmd-text-content-container .rmd-text-content {
+        font-size: 62px;
+    }
+
+}

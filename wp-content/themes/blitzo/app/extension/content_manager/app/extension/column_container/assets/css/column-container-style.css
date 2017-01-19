@@ -1,0 +1,117 @@
+/**
+ *  COLUMN CONTAINER STYLE
+ *  ------------------------
+ */
+.rmd-column-container-wrapper {
+    background-color: transparent;
+    padding:0px; 
+    position: relative; 
+    width: 100%;
+    display: block;
+    //float: left; 
+}
+
+.rmd-column-container-wrapper .rmd-cc-background-image {
+    background-repeat: repeat;
+    background-position: top left;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+}
+
+
+/* The background position */
+.rmd-column-container-wrapper.bgpos-image-color .rmd-cc-background-image {
+    z-index: 1;
+}
+.rmd-column-container-wrapper.bgpos-image-color .rmd-cc-overlay {
+    z-index: 2;
+} 
+.rmd-column-container-wrapper.bgpos-color-image .rmd-cc-background-image {
+    z-index: 2;
+}
+.rmd-column-container-wrapper.bgpos-color-image .rmd-cc-overlay {
+     z-index: 1;
+}
+
+
+/* The background size */
+.rmd-column-container-wrapper.bgsize-fixed .rmd-cc-background-image {
+    background-repeat: no-repeat; 
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+}
+.rmd-column-container-wrapper.bgsize-horizontal .rmd-cc-background-image {
+    background-repeat: repeat-y; 
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+} 
+.rmd-column-container-wrapper.bgsize-vertical .rmd-cc-background-image {
+    background-repeat: repeat-x; 
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+}
+.rmd-column-container-wrapper.bgsize-cover .rmd-cc-background-image {
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.rmd-column-container-wrapper.bgsize-parallax .rmd-cc-background-image {
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/* The background image alignment */
+.rmd-column-container-wrapper.bgsize-fixed.bgalign-left .rmd-cc-background-image {
+    background-position: top left;
+}
+.rmd-column-container-wrapper.bgsize-fixed.bgalign-center .rmd-cc-background-image {
+    background-position: top center;
+}
+.rmd-column-container-wrapper.bgsize-fixed.bgalign-right .rmd-cc-background-image {
+    background-position: top right;
+}
+
+.rmd-column-container-wrapper .column-wrapper { 
+    overflow: visible;
+    position: relative;
+    z-index: 3;
+}  
+.rmd-column-container-wrapper .column-wrapper .column-overlay {
+    position: absolute;
+    display: block;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; 
+} 
+
+.rmd-column-container-wrapper .column-wrapper .column-content-container {
+    position: relative;
+    z-index: 1;
+
+}
+
+   
+
+ 
+   

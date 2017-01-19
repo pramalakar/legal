@@ -1,0 +1,426 @@
+// >>>----------------------------->>> WOOCOMMERCE STYLES <<<-----------------------------<<< 
+
+.woocommerce {
+	
+	h2 {
+		margin:0px;
+	}
+
+	.page-title {
+		margin-bottom:-10px;
+	}
+ 
+
+	form.checkout_coupon, 
+	form.login,
+	form.register {
+	    border: 1px solid #ddd;
+	    padding: 20px;
+	    margin: 0 0 2em;
+	    text-align: left;
+	    border-radius: 0px;
+	}
+
+	form.login .form-row label.inline {
+	    display: inline;
+	    float: right;
+	}
+	
+	#respond input#submit,
+	#respond input#submit.alt,
+	a.button,
+	a.button.alt,
+	button.button,
+	button.button.alt,
+	input.button,
+	input.button.alt {
+		@include rmd_theme_button();
+	}
+
+	.woocommerce-breadcrumb {
+		position: relative;
+		margin-top: 33px;
+		margin-bottom: -37px;
+	    text-transform: uppercase;
+	}
+
+	ul.products {
+
+		li.product {
+			text-align:center;  
+			border:1px solid #eee;
+
+			a img { 
+				margin-bottom: 0; 
+			}
+
+			h3 {
+			    padding: .5em 0;
+			    margin: 0;
+			    font-size: 1em;
+			    text-transform: uppercase;
+			}
+
+			.price {
+			    color: #000;
+			    display: block;
+			    font-weight: 600;
+			    margin-bottom: .5em;
+			    font-size: 1em;
+			}
+
+			.button {
+				width:85%;
+				margin:0px 0px 10px !important;
+				text-transform:uppercase;
+				font-size: 14px;
+				padding-top:12px;
+				padding-bottom:12px;
+			}
+
+			a.added_to_cart {
+				padding: 5px 0px 15px;
+			}
+		}
+	}
+ 	
+
+ 	// Cart Page
+ 	// -------------
+ 	table.shop_table {
+	    border: 1px solid rgba(0,0,0,.1);
+	    margin: 0 -1px 24px 0;
+	    text-align: left;
+	    width: 100%;
+	    border-collapse: separate;
+	    border-radius: 0px;
+	}
+
+
+	// Checkout Page
+	// -----------------
+	#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+	    background: #ebe9eb;
+	    border-radius: 0px;
+	}
+
+
+	// Widget Filter Price
+	// ---------------------- 
+	.widget_price_filter {
+
+		// This is the circle at the sides of the price filter slider.
+		.ui-slider .ui-slider-handle {
+		    position: absolute;
+		    z-index: 2;
+		    width: 1em;
+		    height: 1em;
+		    background-color: #000;
+		    border-radius: 1em;
+		    cursor: ew-resize;
+		    outline: 0;
+		    top: -.3em;
+		    margin-left: -.5em;
+		}
+
+		// This is the horizontal line of the price filter slider.
+		.ui-slider .ui-slider-range {
+		    position: absolute;
+		    z-index: 1;
+		    font-size: .7em;
+		    display: block;
+		    border: 0;
+		    border-radius: 1em;
+		    background-color: #000;
+		}
+
+		// This is the background of the horizontal line of the price filter slider.
+		.price_slider_wrapper .ui-widget-content {
+		    border-radius: 1em;
+		    background-color: #d67f97;
+		    border: 0;
+		}
+
+		// The button of the price filter slider.
+		.price_slider_amount .button {
+		    font-size: 1.15em;
+		    float: left;
+		    background-color: #000;
+		    border-color: #000;
+
+		    &:hover,
+		    &:focus,
+		    &:active {
+		    	background: #d67f97;
+		    	border-color: #d67f97;
+		    }
+		}
+
+	}
+
+
+	// Widget for cart
+	&.widget_shopping_cart {
+
+		ul.product_list_widget {
+
+			> li a {
+				padding-bottom:0px !important;
+			}
+			> li a,
+			> li .quantity {
+				padding-left:30px !important; 
+			}
+ 
+			> li .quantity {
+				padding-left:30px !important;
+				display: block;
+			}
+
+			> li a.remove {
+				padding-left:0px !important;
+				top: 7px;
+				line-height: 12px !important;
+			} 
+
+			>li:last-of-type {
+				.quantity {
+					padding-bottom:5px;
+				}
+			}
+		}
+
+		.total {
+		    border-top: none;
+		    padding: 10px 0 10px;
+		}
+	}  
+
+
+	// Alert Message
+	.woocommerce-info {
+		border-top-color: #d67f97 !important; 
+		&:before {
+		    color: #d67f97 !important;
+		}
+
+	}
+}
+
+
+
+// This is inteded for the widget within the navbar section.
+// ----------------------------------------------------------------
+.navbar {
+	 
+	.rmd-woo-cart-button-container {
+
+		@include hover_transition;
+
+		margin-top:60px; 
+		position: relative;
+		cursor: pointer;
+
+		a:hover,
+		a:focus,
+		a:active {
+			color: #fff !important;
+		}
+
+		&:hover,
+		&:focus {
+			.widgets-container {
+				display: block;
+			}
+			.cart-button-container {
+				background-color: #d67f97;
+				color: #fff;
+
+				&:after {
+					display: inline-block;
+				}
+			} 
+		}
+
+        .cart-button-container {
+
+        	@include hover_transition;
+
+        	padding: 0px 10px !important;
+			margin:0px 0px 0px 20px;
+			font-size:29px;
+			line-height: 42px !important;
+			background: #ddd;
+			color: #000; 
+			position: relative;
+			cursor: pointer;
+
+			&:hover,
+			&:focus, {  
+ 
+			}
+ 
+			&:after {
+		    	position: absolute;
+		    	content:'';
+		    	width:20px;
+		    	height:20px;
+		    	background-color: #000;
+		    	bottom:0px;
+		    	-ms-transform: rotate(45deg); /* IE 9 */
+			    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+			    transform: rotate(45deg);
+			    left:50%;
+			    margin-left:-9px;
+			    margin-bottom:-15px;
+			   	display:none;
+		    } 
+        }
+
+
+        .widgets-container {
+        	background: #000;
+		    color: #fff;
+		    padding: 15px 15px 20px;
+		    position: absolute;
+		    right: 0px;
+		    width:265px;
+		    display: none;
+			overflow: hidden;
+
+		    .widget {
+        		.widget-title {
+	        		color: #fff;
+	        	}
+	        }
+
+	        .widget:last-of-type {
+	        	margin-bottom:0px;
+	        }
+
+
+	        // SHopping Cart
+	        .widget_shopping_cart {
+	        	.widget_shopping_cart_content {
+
+	        		ul.product_list_widget {
+	        			> li {
+	        				position:relative;
+
+	        				.remove {
+	        					top: 9px; 
+							    padding-top: 5px !important;  
+	        				}
+	        			}
+	        		}
+
+	        		.buttons {
+	        			a.button {
+	        				margin-right:3px;
+	        			}
+
+	        			a.button:hover,
+	        			a.button:focus,
+	        			a.button:active {
+	        				background-color: #fff !important;
+	        				color: #000 !important;
+	        				border-color: #fff !important;
+	        			}
+	        		}
+	        	}
+	        }	
+
+        }
+
+        
+	}
+
+	.navbar-header {
+
+		.rmd-woo-cart-button-container {
+			position: absolute;
+			margin-top: 23px !important;
+    		margin-right: 10px !important; 
+			display: inline-block;
+			right:0px;
+			top:0px;
+
+			&:hover,
+			&:focus { 
+				.widgets-container {
+					display: none;
+				}
+				.cart-button-container {
+					background-color: transparent;
+					color: #d67f97;
+
+					&:after {
+						display: none;
+					}
+				} 
+			}
+
+			.cart-button-container { 
+				background-color: transparent; 		
+				color: #d67f97;	
+	        }
+
+	        .widgets-container { 
+			    .widget {
+		        	text-align:left !important;
+		        }
+		    }
+
+		} 
+
+	}
+  
+}
+ 
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+	
+	.navbar {
+		.navbar-header { 
+			.rmd-woo-cart-button-container { 
+				margin-top: 23px !important;
+	    		margin-right: 10px !important;    
+			}  
+		}
+	}
+	
+  	.navbar.navbar-fixed-top {
+		.navbar-header { 
+			.rmd-woo-cart-button-container { 
+				margin-top: 9px !important;
+	    		margin-right: 10px !important;    
+			}  
+		}
+	}
+ 
+}
+
+@media only screen and (min-width : 992px) {
+ 
+	.navbar {
+		.rmd-woo-cart-button-container { 
+			margin-top:47px;  
+		}
+	}
+
+	.navbar.navbar-fixed-top {
+ 
+        .rmd-woo-cart-button-container { 
+			margin-top:9px;  
+		}  
+	}
+}
+ 
+@media only screen and (min-width : 1200px) {
+
+ 	.navbar {
+		.rmd-woo-cart-button-container { 
+			margin-top:60px;  
+		}
+	} 
+}

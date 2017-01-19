@@ -1,0 +1,53 @@
+// >>>----------------------------->>> CONTACT FORM 7 STYLES <<<-----------------------------<<< 
+
+.wpcf7,
+.wpcf7-form {
+    label {
+        font-size: 16px;
+        line-height: 1.6em;
+        letter-spacing: 0px;
+        font-weight: 400;
+        font-style: normal;
+        display:block;
+    }
+
+    .form-control {
+        padding: 20px 20px !important;
+        border-color: $common_border_color !important;
+        background-color: #fff !important;
+        width:100%;
+    }
+    textarea.form-control {
+        padding: 10px 20px !important;
+    }  
+    
+    .wpcf7-not-valid {
+        border-color: #c12e2b !important;
+    }
+    span.wpcf7-not-valid-tip {
+        color: #c12e2b !important;
+        font-size: 14px !important;
+        font-weight: 400 !important; 
+    }
+    div.wpcf7-validation-errors {
+        border: 2px solid #c12e2b;
+        background-color: #c12e2b;
+        color: #fff;
+    }
+    div.wpcf7-response-output {
+        margin: 15px 0px;
+        padding: 10px 15px;
+    }
+
+    div.wpcf7-mail-sent-ok { 
+        border: 2px solid #398f14;
+        background-color: #398f14;
+        color: #fff;
+    } 
+
+    .wpcf7-submit {
+        padding: 5px 40px;
+        text-transform: uppercase;
+    }
+}
+

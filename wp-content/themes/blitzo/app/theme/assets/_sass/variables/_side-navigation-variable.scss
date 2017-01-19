@@ -1,0 +1,76 @@
+// >>>----------------------------->>> SIDE NAVIGATION STYLES <<<-----------------------------<<< 
+
+// Sidenav
+// -------------  
+
+$sidenav_bgcolor: $primary_color;
+$sidenav_border_color: #525252;
+ 
+$sidenav_menu_link_textcolor: #fff;
+$sidenav_menu_link_textcolor_hover: #fff;
+
+$sidenav_menu_link_bgcolor: $sidenav_bgcolor;  
+$sidenav_menu_link_bgcolor_hover: #1b1a1a; 
+
+$sidenav_active_menu_link_textcolor: #fff;
+$sidenav_active_menu_link_bgcolor: #1b1a1a;
+
+$sidenav_open_menu_link_textcolor: #fff;
+$sidenav_open_menu_link_bgcolor: transparent; 
+
+
+// Sidenav - Dropdown Menu
+// -----------------------------
+$sidenav_dropdown_bgcolor: #333; 
+
+$sidenav_dropdown_menu_link_textcolor: $sidenav_menu_link_textcolor;
+$sidenav_dropdown_menu_link_textcolor_hover: $sidenav_menu_link_textcolor_hover;
+
+$sidenav_dropdown_menu_link_bgcolor: $sidenav_menu_link_bgcolor; 
+$sidenav_dropdown_menu_link_bgcolor_hover: $sidenav_menu_link_bgcolor_hover; 
+
+$sidenav_dropdown_active_menu_link_textcolor: $sidenav_active_menu_link_textcolor;
+$sidenav_dropdown_active_menu_link_bgcolor: $sidenav_active_menu_link_bgcolor;
+  
+
+
+// Sidenav Widget Calendar
+// -------------------------
+$sidenav_widget_calendar_caption_textcolor :#fff;
+$sidenav_widget_calendar_border_color :#fff; 
+$sidenav_widget_calendar_active_date_bgcolor :#fff;
+$sidenav_widget_calendar_active_date_textcolor : $primary_color;
+$sidenav_widget_calendar_th_textcolor:#fff;
+$sidenav_widget_calendar_td_textcolor:#fff;
+
+
+// Sidenav Widget Title
+// -----------------------
+$sidenav_widget_title_textcolor: #fff;
+
+
+
+// Sidenav Widget Form Input Border
+// ----------------------------------
+$sidenav_widget_form_input_border_color: $sidenav_border_color;
+
+
+
+// Sidenav Widget Menu
+// ----------------------
+$sidenav_widget_menu_border_color: $sidenav_border_color;
+$sidenav_widget_menu_link_textcolor: #fff;
+$sidenav_widget_menu_link_textcolor_hover: #fff; 
+
+ 
+// Sidenav Search Form
+// -----------------------
+$sidenav_search_form_input_border_color: #fff; 
+
+$sidenav_search_form_button_textcolor: #fff;
+$sidenav_search_form_button_bgcolor: $sidenav_border_color;
+$sidenav_search_form_button_border_color: $sidenav_border_color;
+
+$sidenav_search_form_button_textcolor_hover: #fff;
+$sidenav_search_form_button_bgcolor_hover: $sidenav_border_color;
+$sidenav_search_form_button_border_color_hover: $sidenav_border_color;

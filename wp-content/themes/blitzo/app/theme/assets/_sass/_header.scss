@@ -1,0 +1,262 @@
+// >>>----------------------------->>> HEADER STYLES <<<-----------------------------<<< 
+
+header.header-wrapper { 
+    /* Do not set overflow:hidden on this wrapper because it will affect the display of the dropdown menu. */
+    position: relative !important;
+    width: 100%; 
+    z-index: 5; 
+
+
+    &.floated {
+		position: absolute !important; 
+	}
+
+	&.header-fixed-top {
+		margin-top:88px; 
+	}  
+
+	&.header-fixed-top {
+		.site-logo-container {
+			.site-logo { 
+	    		h1 {
+	    			white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+	    		}
+	    	}
+		}
+	}  
+}  
+
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+	
+	header.header-wrapper { 
+		display: block;
+        float: none; 
+
+		.navbar-header {
+			text-align:center;
+		}
+	}   
+}
+
+
+@media only screen and (min-width : 992px) {
+	
+	header.header-wrapper {  
+		.navbar-header {
+			text-align:left;
+		} 
+	} 
+}
+
+
+ 
+
+
+// Header Top Style
+// ---------------------
+header.header-wrapper { 
+
+	.header-inner-top-wrapper {
+    	background-color: $header_top_bgcolor;
+    	color: $header_top_textcolor;
+    	padding:6px 0px;   
+    	position: relative;
+    	font-size: 14px !important; 
+ 
+    	a {
+    		color: $header_top_link_textcolor !important; 
+
+	    	&:hover,
+	    	&:focus { 
+	    		color: $header_top_link_textcolor_hover !important;
+	    	}
+    	}
+    	 
+    	.header-top-left-container {
+
+    	}
+
+    	.header-top-right-container {
+    			float: right;
+    	} 
+    }  
+}
+
+
+
+
+// Site Logo Style
+// -------------------
+
+header.header-wrapper { 
+	
+	.site-logo-container {
+	    display: inline-block; 
+	    overflow:visible;
+	    height:auto;
+	    box-sizing:border-box;
+	    padding: 20px 0px;	  
+	    display: flex;
+    	align-items: center;
+    	justify-content: center;
+
+	    .site-logo {
+
+	    	h1 {  
+	    		@include hover_transition;
+ 				
+ 				font-family: arial;
+ 				font-weight: 800;
+	    		background-color: transparent;
+			    margin:15px 0px;
+			    display: inline-block;
+			    margin:0px !important; 
+				padding:0px !important;
+				color: $header_site_name_textcolor; 
+	    		line-height: 100px;
+	    		text-transform: uppercase;  
+				float: left;
+				
+	    		&:hover {
+					color: $header_site_name_textcolor_hover;
+				}
+			}  
+
+			img {
+			    height:100px;
+			    width: auto;
+			    margin:0px;
+			} 
+	    } 
+	}  
+}
+
+
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+	
+	header.header-wrapper {  
+
+		.site-logo-container {  
+			margin-bottom:0px; 
+			padding: 15px 0px;
+			margin-left:63px;
+        	margin-right:63px;
+        	min-height:80px; 
+        	 
+
+			.site-logo h1 {
+		        padding-left: 15px; 
+		        font-size: 1.5em; 
+        		line-height: 1.5em;  
+        		width:calc(100vw - 130px);
+		    }  
+			.site-logo img {
+		        margin: 0px;
+			    max-height: 50px;
+			    height: auto;
+			    width: auto;
+			    margin-top: 0px;
+			    margin-bottom: 0px;
+		    }
+		}
+
+		&.header-fixed-top {
+			.site-logo-container { 
+				padding: 10px 0px;
+				min-height:60px;
+				max-height:60px;
+				height:60px;
+
+				.site-logo img {
+			        margin:0px;
+			        max-height: 40px; 
+			        height: auto;
+			        width: auto;
+			    }  
+    			.site-logo h1 { 
+			        font-size:1.5em; 
+	        		line-height: 40px;
+			    } 
+			}
+		}  
+	}   
+}
+
+ 
+@media only screen and (min-width : 768px) {
+    header.header-wrapper { 
+ 
+    	.site-logo-container {
+    		padding: 15px 0px;
+
+    		.site-logo h1 {
+		        font-size: 2em; 
+		        line-height: 55px;
+		        width:auto;
+		    } 
+    	} 
+
+    	&.header-fixed-top {
+			.site-logo-container {  
+    			.site-logo h1 {
+			        font-size: 2em; 
+			        line-height: 40px;
+			    } 
+			}
+		}
+    }   
+}
+
+
+@media only screen and (min-width : 992px) {
+	
+	header.header-wrapper {
+  
+		.site-logo-container {  
+			display: inline-flex;
+        	float: left;
+        	margin:0px; 
+        	padding: 15px 0px;
+        	height:92px;
+
+			.site-logo h1 {
+		        padding-left: 0px; 
+		        font-size: 25px; 
+        		line-height: 55px;
+		    }  
+		    .site-logo img {
+		        margin: 0px;
+				max-height: 60px;
+				height: auto;
+				width: auto;
+				margin-top: 0px;
+				margin-bottom: 0px;
+		    } 
+		}
+
+		&.header-fixed-top {
+			.site-logo-container { 
+				padding: 10px 0px !important;
+
+				.site-logo img {
+			        margin:0px;
+			        max-height: 40px; 
+			        height: auto;
+			        width: auto;
+			    }  
+
+			    .site-logo h1 {
+			        padding-left: 0px; 
+			        font-size: 25px; 
+	        		line-height: 40px;
+			    } 
+			}
+		}	  
+	}
+}
+
+ 

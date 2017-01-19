@@ -1,0 +1,62 @@
+
+// >>>----------------------------->>> ARTICLE STYLES <<<-----------------------------<<< 
+
+
+$entry_header_bgcolor: $primary_color;
+
+
+// Date Posted
+// ---------------
+$posted_date_day_border_color: $primary_color;
+$posted_date_day_color: $primary_color;
+$posted_date_day_bgcolor: #fff; 
+$posted_date_month_color: #fff;
+$posted_date_month_bgcolor: $primary_color;
+$posted_date_year_color: $primary_color;
+$posted_date_year_bgcolor: transparent;
+
+
+// Comment List and Form
+// ------------------------
+$comment_list_border_color: $common_border_color;
+$comment_form_bgcolor: #ddd;
+$comment_form_button_textcolor: $theme_button_textcolor;
+$comment_form_button_textcolor_hover: $theme_button_textcolor_hover;
+$comment_form_button_bgcolor: $theme_button_bgcolor;
+$comment_form_button_bgcolor_hover: $theme_button_bgcolor_hover;
+
+
+// Post Pagination
+// ------------------
+$post_pagination_border_color: $primary_color;
+$post_pagination_bgcolor: #fff;
+$post_pagination_textcolor: $primary_color;
+$post_pagination_border_color_hover: $primary_color;
+$post_pagination_bgcolor_hover: $primary_color;
+$post_pagination_textcolor_hover: #fff;
+
+
+// Post Navigation
+// ------------------
+$post_navigation_border_color: $common_border_color; 
+$post_navigation_color: $common_link_textcolor_hover; 
+$post_navigation_color_hover: $common_link_textcolor;
+
+
+// Page Title
+// -------------
+$page_title_textcolor: #fff; 
+
+
+// Entry Title (within the blog list)
+// ------------------------------------
+$entry_title_textcolor: $primary_color;
+$entry_title_textcolor_hover: $secondary_color;
+
+
+// Post Thumbnail
+// -----------------
+$post_thumbnail_border_color: $common_border_color;
+
+
+

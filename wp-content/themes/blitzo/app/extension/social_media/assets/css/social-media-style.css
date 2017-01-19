@@ -1,0 +1,63 @@
+/**
+ *  SOCIAL MEDIA STYLE
+ *	----------------------
+ */
+
+.social-media-container {
+	display: inline-block;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+.social-media-container .social-media {
+	text-align: center;
+	display: inline-block;
+	overflow: hidden; 
+	font-size: 1.2em;
+	margin: 10px 7px;
+} 
+.social-media-container a {
+	color: #272727; 
+	overflow: hidden;
+    display: inline-flex;
+}
+.social-media-container a:hover,
+.social-media-container a:focus,
+.social-media-container a:active {
+	color: #777; 
+	text-decoration: none;
+}
+
+
+
+/** 
+ *	Footer social media section
+ */
+.footer-social-media-wrapper {
+	margin:20px;
+} 
+.footer-social-media-wrapper .social-media-container a {
+	color: #272727 !important; 
+}
+.footer-social-media-wrapper .social-media-container a:hover,
+.footer-social-media-wrapper .social-media-container a:focus,
+.footer-social-media-wrapper .social-media-container a:active {
+	color: #777 !important;  
+}
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+    .footer-social-media-wrapper .social-media-container .social-media { 
+		font-size: 1.8em;
+		margin:7px 10px;
+	}
+}
+
+/* / Small Devices, Tablets /*/
+@media only screen and (min-width : 768px) {
+    .footer-social-media-wrapper .social-media-container .social-media { 
+		font-size: 2em;
+		margin:4px 15px;
+	} 
+}
+
+ 

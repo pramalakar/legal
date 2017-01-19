@@ -1,0 +1,152 @@
+// >>>----------------------------->>> FOOTER STYLES <<<-----------------------------<<< 
+
+
+footer.footer-wrapper {
+    background-color: transparent;
+    overflow: visible;
+    color: $footer_common_textcolor; 
+    font-size: 14px; 
+    padding-top:0px; 
+    position: relative; 
+
+
+    .container {
+        position: relative;
+    } 
+
+    a {
+        color: $footer_link_textcolor;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+        color: $footer_link_textcolor_hover;
+    } 
+}   
+
+
+
+// Footer Widget Style
+// -------------------------
+footer.footer-wrapper {
+
+    .footer-inner-widget-wrapper {
+        background-color: $footer_widget_wrapper_bgcolor;  
+        border-top:1px solid $footer_widget_wrapper_border_color;
+        padding: 40px 0px 15px; 
+    }
+}
+
+
+
+
+// Footer Copyright Style
+// -------------------------
+footer.footer-wrapper {
+
+    .footer-inner-copyright-wrapper {
+        background-color: $footer_copyright_wrapper_bgcolor; 
+        padding:25px 0px 25px;  
+        border-top:1px solid $footer_copyright_wrapper_border_color;
+
+        .footer-copyright-container { 
+            
+            p {
+                font-size:13px !important;
+            }
+
+            a {
+                color: $footer_copyright_link_textcolor;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $footer_copyright_link_textcolor_hover;
+                }
+            }
+
+            .copyright,
+            .powered-by {
+                padding:8px;
+                display: block;
+            }
+
+            .copyright {
+                margin:0px;  
+                color: $footer_copyright_textcolor;
+            } 
+
+            .powered-by {
+                margin:0px;  
+                a {
+                    color: $primary_color;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $footer_copyright_textcolor;
+                    }
+                }
+            } 
+
+        }
+    }
+}
+
+
+   
+@media only screen and (min-width : 320px), (max-width: 320px){  
+	footer.footer-wrapper { 
+           
+        .footer-inner-copyright-wrapper {
+
+            .footer-copyright-container { 
+
+                .copyright {  
+                    margin-bottom: 0px;   
+                } 
+
+                .powered-by {  
+
+                } 
+
+            }
+        }
+    }  
+}
+  
+@media only screen and (min-width : 768px) { 
+    footer.footer-wrapper { 
+ 
+        .footer-inner-copyright-wrapper {
+
+            .footer-copyright-container { 
+ 
+                .copyright {  
+
+                }  
+            }
+        }
+    }  
+}
+
+@media only screen and (min-width : 992px) { 
+    footer.footer-wrapper { 
+   
+        .footer-inner-copyright-wrapper {
+
+            .footer-copyright-container { 
+
+                .copyright {  
+                    margin-bottom: 0px;  
+                } 
+
+                .powered-by {  
+                    border-top:none;   
+                } 
+            }
+        }
+    }  
+}
+ 
+ 

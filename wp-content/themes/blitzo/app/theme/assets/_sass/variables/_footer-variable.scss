@@ -1,0 +1,66 @@
+// >>>----------------------------->>> FOOTER STYLES <<<-----------------------------<<< 
+ 
+// Footer Text Color
+// --------------------
+$footer_common_textcolor: $secondary_color;
+
+
+// Footer Link Text Color
+// -------------------------
+$footer_link_textcolor: $secondary_color;
+$footer_link_textcolor_hover: $primary_color;
+ 
+
+// Footer Widget Wrapper
+// ------------------------
+$footer_widget_wrapper_bgcolor: #fff; 
+$footer_widget_wrapper_border_color: $common_border_color;
+
+
+// Footer Widget Title
+// -----------------------
+$footer_widget_title_textcolor: $primary_color;
+
+
+// Footer Widget Form Input Border
+// ----------------------------------
+$footer_widget_form_input_border_color: $primary_color;
+
+
+// Footer Widget Calendar
+// -------------------------
+$footer_widget_calendar_caption_textcolor : $primary_color;
+$footer_widget_calendar_border_color : $primary_color; 
+$footer_widget_calendar_active_date_bgcolor : $primary_color;
+$footer_widget_calendar_active_date_textcolor : #fff;
+$footer_widget_calendar_th_textcolor: $primary_color;
+$footer_widget_calendar_td_textcolor: $primary_color;
+
+ 
+// Footer Widget Menu
+// ---------------------
+$footer_widget_menu_border_color: $common_border_color;
+$footer_widget_menu_link_textcolor: $primary_color;
+$footer_widget_menu_link_textcolor_hover: $secondary_color;
+
+
+// Footer Widget Search Form
+// --------------------------------
+$footer_search_form_input_border_color: $primary_color; 
+
+$footer_search_form_button_textcolor: #fff;
+$footer_search_form_button_bgcolor: $primary_color;
+$footer_search_form_button_border_color: $primary_color;
+
+$footer_search_form_button_textcolor_hover: $footer_search_form_button_textcolor;
+$footer_search_form_button_bgcolor_hover: $footer_search_form_button_bgcolor;
+$footer_search_form_button_border_color_hover: $footer_search_form_button_border_color;
+ 
+
+// Footer Copyright 
+// -------------------
+$footer_copyright_wrapper_bgcolor: #fff;
+$footer_copyright_wrapper_border_color: $common_border_color;
+$footer_copyright_textcolor: $secondary_color; 
+$footer_copyright_link_textcolor: $primary_color;
+$footer_copyright_link_textcolor_hover: $secondary_color;

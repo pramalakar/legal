@@ -1,0 +1,395 @@
+// >>>----------------------------->>> WIDGETS STYLES <<<-----------------------------<<< 
+
+ 
+// Default Style
+// --------------------------------------------------------------------------------
+
+
+// Widget Area 
+.widget,
+.search-form  {
+    margin-bottom: 30px;
+} 
+ 
+
+.widget {
+
+	// Widget Title 
+	.widget-title,
+	.widgettitle {
+	    font-size: 21px; 
+	    margin-top:0px;
+	    margin-bottom:0px;
+	    padding-top:0px;
+	}
+
+
+	// Widget Site Logo 
+	&.rmd-widget-site-logo {
+		width:100%;
+		height: auto;
+
+		img {
+			max-width:200px;
+		}
+	}
+
+
+
+	// Widget Dropdown Input   
+	select {
+	    display: inline-block; 
+	    height: 30px;
+	    padding: 6px 12px;
+	    font-size: 14px;
+	    line-height: 1.42857143;  
+	    background-image: none;
+	    border: 1px solid transparent;
+	    border-radius: 0px;
+	    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	    font-weight: 400;
+	    color: $primary_color;
+	    width: auto;  
+	}  
+
+
+
+	// Widget List     
+	>ul,
+	ul.menu {
+	   padding: 0px;
+	}  
+	ul.sub-menu {
+	   	padding-left: 20px;
+	   	margin-top:0px;
+	}
+
+	ul > li,
+	ul.menu > li ,
+	ul.menu > li > ul.sub-menu > li,
+	ul.menu > li > ul.sub-menu > li > ul.sub-menu > li {
+		background-color: transparent;
+		border-bottom: 1px solid;
+		padding:0px 0px !important;
+	}
+
+	ul > li:first-child,
+	ul.menu > li:first-child,
+	ul.menu > li > ul.sub-menu > li:first-child, 
+	ul.menu > li > ul.sub-menu > li > ul.sub-menu > li:first-child {
+	    border-top: 1px solid;
+	}
+
+	ul > li a,
+	ul.menu > li a,
+	ul.menu > li > ul.sub-menu > li a,
+	ul.menu > li > ul.sub-menu > li > ul.sub-menu > li > a  {
+	    background-color: transparent; 
+	    display: inline-block; 
+	    padding:7px 0px !important;
+	}
+
+	ul#recentcomments > li a { 
+	    display: inline-block !important; 
+	}
+	ul.menu > li > ul.sub-menu > li:last-child,
+	ul.menu > li > ul.sub-menu > li > ul.sub-menu > li:last-child {
+	    border-bottom: 0px;
+	} 	 
+	ul.menu {
+	   padding: 0px;
+	}  
+	ul.menu > li > ul.sub-menu {
+	   padding-left: 0px; 
+	   > li > a {
+	   		padding-left:15px !important;
+	   }
+	}  
+	ul.menu > li > ul.sub-menu > li > ul.sub-menu {
+	    padding-left: 0px;
+	    > li > a {
+	    	padding-left:15px !important;
+	    }
+	} 
+
+
+
+	// Pages Widget 
+	&.widget_pages {
+
+		ul {
+		   padding: 0px;
+		}    
+		ul > li {
+			background-color: transparent;
+			border-bottom: 1px solid;
+			padding:0px 0px !important;
+		}
+
+		ul > li:first-child {
+		    border-top: 1px solid;
+		}
+
+		ul > li a  {
+		    background-color: transparent; 
+		    display: inline-block;
+		    padding: 7px 0px !important; 
+		} 
+		ul > li > ul.children > li:last-child {
+		    border-bottom: 0px;
+		} 	  
+		ul > li > ul.children {
+		   padding-left: 0px;
+
+		   > li > a {
+		   		padding-left:15px !important;
+		   }
+		}   
+	}
+
+
+
+	// Recent Posts   
+	&.widget_recent_entries .post-date {
+		display: block;
+	    font-size: 12px;
+	    font-style: italic;
+	    text-align: left;
+	} 
+  
+
+	// Widget Archive 
+  	&.widget_archive {
+  		.screen-reader-text {
+  			padding-right:10px;
+  		}
+  	}
+
+
+  	// Widget Calendar 
+  	&.widget_calendar {
+  		.calendar_wrap { 
+		    background-color: transparent; 
+ 
+		    table#wp-calendar { 
+			    width:100%; 
+		 		
+		 		caption {
+			    	padding-top:0px !important;
+			    }
+
+				th, 
+				td { 
+				    text-align: center;  
+				}
+
+				thead tr { 
+				    text-align: center; 
+				     border:1px solid; 
+				} 
+		 
+				tbody {
+					td { 
+					    text-align: center; 
+					    border:1px solid; 
+					} 
+					td a { 
+					    width:100%;
+					    display: block; 
+					}
+				} 
+
+				tfoot {
+					tr td {
+					    padding:5px 10px;
+					}
+					tr td:nth-child(1) {
+					    text-align: left;
+					}
+					#prev {
+						text-align: left;
+					}
+					#next {
+						text-align: right;
+					}
+
+				} 
+
+			} 
+
+		}
+
+  	}	
+
+}
+
+@include widget_list;
+@include widget_calendar;
+@include widget_search;
+
+
+
+
+// Header Section
+// --------------------------------------------------------------------------------
+header.header-wrapper {   
+	.header-inner-top-wrapper {
+		.widget {
+			margin:0px;
+			padding:0px;
+		}
+
+		.widget .widget-title,
+		.widget .widgettitle { 
+		    color: $header_widget_title_textcolor;
+		} 
+	 	
+		// Widget Dropdown Input   
+		.widget select { 
+			border-color: $header_widget_form_input_border_color; 
+		}  
+
+
+		// Widget List Style   
+		@include widget_list($header_widget_menu_border_color, $header_widget_menu_link_textcolor, $header_widget_menu_link_textcolor_hover);	 
+	 
+
+		// Widget Calendar Style  
+		@include widget_calendar($header_widget_calendar_caption_textcolor, $header_widget_calendar_border_color, $header_widget_calendar_th_textcolor, $header_widget_calendar_td_textcolor, $header_widget_calendar_active_date_bgcolor, $header_widget_calendar_active_date_textcolor);
+	    
+
+		// Widget Search Form  
+		@include widget_search($header_search_form_input_border_color, $header_search_form_button_textcolor, $header_search_form_button_bgcolor, $header_search_form_button_border_color, $header_search_form_button_textcolor_hover, $header_search_form_button_bgcolor_hover, $header_search_form_button_border_color_hover);
+
+	} 
+}
+
+
+
+// Navigation Section
+// --------------------------------------------------------------------------------
+.navbar {   
+	.widget .widget-title,
+	.widget .widgettitle { 
+	    color: $navbar_widget_title_textcolor;
+	} 
+ 	
+	// Widget Dropdown Input   
+	.widget select { 
+		border-color: $navbar_widget_form_input_border_color; 
+	}  
+
+	// Widget List Style   
+	@include widget_list($navbar_widget_menu_border_color, $navbar_widget_menu_link_textcolor, $navbar_widget_menu_link_textcolor_hover, UPPERCASE, 600);
+		
+
+	// Widget Calendar Style  
+	@include widget_calendar($navbar_widget_calendar_caption_textcolor, $navbar_widget_calendar_border_color, $navbar_widget_calendar_th_textcolor, $navbar_widget_calendar_td_textcolor, $navbar_widget_calendar_active_date_bgcolor, $navbar_widget_calendar_active_date_textcolor);
+
+ 
+	// Widget Search Form  
+	@include widget_search($navbar_search_form_input_border_color, $navbar_search_form_button_textcolor, $navbar_search_form_button_bgcolor, $navbar_search_form_button_border_color, $navbar_search_form_button_textcolor_hover, $navbar_search_form_button_bgcolor_hover, $navbar_search_form_button_border_color_hover);
+}
+
+
+
+
+// Sidenav Menu Section
+// --------------------------------------------------------------------------------
+.side-navmenu {
+
+	.widget {
+		margin-bottom:20px;
+	}
+	.widget:last-of-type {
+		margin-bottom:0px !important;
+	}
+
+	.widget .widget-title,
+	.widget .widgettitle { 
+	    color: $sidenav_widget_title_textcolor;
+	} 
+ 	
+	// Widget Dropdown Input   
+	.widget select { 
+		border-color: $sidenav_widget_form_input_border_color; 
+	}  
+
+
+	// Widget List Style   
+	@include widget_list($sidenav_widget_menu_border_color, $sidenav_widget_menu_link_textcolor, $sidenav_widget_menu_link_textcolor_hover, UPPERCASE);	 
+  	 
+
+	// Widget Calendar Style  
+	@include widget_calendar($sidenav_widget_calendar_caption_textcolor, $sidenav_widget_calendar_border_color, $sidenav_widget_calendar_th_textcolor, $sidenav_widget_calendar_td_textcolor, $sidenav_widget_calendar_active_date_bgcolor, $sidenav_widget_calendar_active_date_textcolor);
+    
+
+	// Widget Search Form  
+	@include widget_search($sidenav_search_form_input_border_color, $sidenav_search_form_button_textcolor, $sidenav_search_form_button_bgcolor, $sidenav_search_form_button_border_color, $sidenav_search_form_button_textcolor_hover, $sidenav_search_form_button_bgcolor_hover, $sidenav_search_form_button_border_color_hover );
+
+}
+
+
+
+
+// Sidebar Section
+// --------------------------------------------------------------------------------
+.sidebar-container {
+
+	.widget .widget-title,
+	.widget .widgettitle { 
+	    color: $sidebar_widget_title_textcolor;
+	} 
+ 	
+	// Widget Dropdown Input   
+	.widget select { 
+		border-color: $sidebar_widget_form_input_border_color; 
+	}  
+
+	// Widget List Style   
+	@include widget_list($sidebar_widget_menu_border_color, $sidebar_widget_menu_link_textcolor, $sidebar_widget_menu_link_textcolor_hover);
+		
+
+	// Widget Calendar Style  
+	@include widget_calendar($sidebar_widget_calendar_caption_textcolor, $sidebar_widget_calendar_border_color, $sidebar_widget_calendar_th_textcolor, $sidebar_widget_calendar_td_textcolor, $sidebar_widget_calendar_active_date_bgcolor, $sidebar_widget_calendar_active_date_textcolor);
+
+ 
+	// Widget Search Form  
+	@include widget_search($sidebar_search_form_input_border_color, $sidebar_search_form_button_textcolor, $sidebar_search_form_button_bgcolor, $sidebar_search_form_button_border_color, $sidebar_search_form_button_textcolor_hover, $sidebar_search_form_button_bgcolor_hover, $sidebar_search_form_button_border_color_hover);
+
+}
+
+
+
+// Footer Section
+// --------------------------------------------------------------------------------
+footer.footer-wrapper {
+	 
+ 	.widget .widget-title,
+    .widget .widgettitle { 
+        color: $footer_widget_title_textcolor;
+    } 
+
+    // Widget Dropdown Input   
+    .widget select { 
+        border-color: $footer_widget_form_input_border_color; 
+    }  
+
+
+    // Widget List Style  
+    @include widget_list($footer_widget_menu_border_color, $footer_widget_menu_link_textcolor, $footer_widget_menu_link_textcolor_hover);  
+
+
+    // Widget Calendar Style  
+    @include widget_calendar($footer_widget_calendar_caption_textcolor, $footer_widget_calendar_border_color, $footer_widget_calendar_th_textcolor, $footer_widget_calendar_td_textcolor, $footer_widget_calendar_active_date_bgcolor, $footer_widget_calendar_active_date_textcolor);
+
+  
+    // Widget Search Form  
+    @include widget_search($footer_search_form_input_border_color, $footer_search_form_button_textcolor, $footer_search_form_button_bgcolor, $footer_search_form_button_border_color, $footer_search_form_button_textcolor_hover, $footer_search_form_button_bgcolor_hover, $footer_search_form_button_border_color_hover);
+
+}
+

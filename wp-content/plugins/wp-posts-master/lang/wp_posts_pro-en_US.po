@@ -1,0 +1,748 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Posts Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-27 20:05+0530\n"
+"PO-Revision-Date: 2015-11-27 20:05+0530\n"
+"Last-Translator: Flipper Code <hello@flippercode.com>\n"
+"Language-Team: Flipper Code <hello@flippercode.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SearchPath-0: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-"
+"content/plugins/wp-posts-lite\n"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.controller.php:142
+msgid " updated successfully."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.controller.php:143
+msgid " added successfully. You can manage your "
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.frontend.php:124
+msgid "Something went wrong."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.frontend.php:135
+msgid "New Template? Choose a design, settings and tap on save template."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.frontend.php:157
+msgid "No Posts found."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.frontend.php:412
+msgid "Load More"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.posts-widget.php:24
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/wp-posts-lite.php:277
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/wp-posts-lite.php:278
+msgid "WP Posts Lite"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.posts-widget.php:25
+msgid "A widget to display posts listing in sidebar."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.posts-widget.php:76
+msgid "Title:"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.posts-widget.php:82
+msgid "Select Template:"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.posts-widget.php:85
+msgid "Select Template"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.posts.php:270
+msgid "Page"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.tabular.php:223
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.tabular.php:400
+msgid "Selected "
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.tabular.php:237
+msgid "Manage "
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.tabular.php:563
+msgid "Filter"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/core/class.tabular.php:623
+msgid "Select Page"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/model.layout.php:39
+msgid "New Template"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/model.layout.php:40
+msgid "Manage Templates"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/model.layout.php:117
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/model.rules.php:132
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/model.layout.php:119
+msgid "Template updated successfully"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/model.layout.php:121
+msgid "Template added successfully."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/model.layout.php:150
+msgid "Copy"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:48
+msgid "Template Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:48
+msgid "Manage Layouts"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:52
+msgid "Designs"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:53
+msgid "Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:54
+msgid "Source Code"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:55
+msgid "Preview"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:57
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:445
+msgid "Save Template"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:79
+msgid ""
+"You can alter existing design or create your own design using following "
+"placeholders."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:93
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:96
+msgid "Layout Title"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:100
+msgid "Apply Rules"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:107
+msgid "Title Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:113
+msgid "Hide Title"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:119
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:186
+msgid "Link to Post"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:126
+msgid "Title Wrapper"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:128
+msgid "Modify the title container."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:133
+msgid "Content Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:139
+msgid "Hide Content"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:146
+msgid "Content Wrapper"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:148
+msgid "Modify the content container."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:153
+msgid "Content Show"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:154
+msgid "Excerpt"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:154
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:212
+msgid "Full"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:159
+msgid "Content Limit"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:161
+msgid "Modify the content limit."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:166
+msgid "Render Shortcode"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:173
+msgid "Featured Image Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:179
+msgid "Hide Thumbnail"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:193
+msgid "Thumbnail Width"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:195
+msgid "Modify the thumbnail width."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:200
+msgid "Thumbnail Height"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:202
+msgid "Modify the thumbnail height."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:207
+msgid "Thumbnail Size"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:209
+msgid "Thumbnail"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:210
+msgid "Medium"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:211
+msgid "Large"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:218
+msgid "Thumbnail Position"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:220
+msgid "Top"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:221
+msgid "Left"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:222
+msgid "Right"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:228
+msgid "Read More Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:234
+msgid "Hide Read More"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:241
+msgid "Read More Text"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:243
+msgid "Modify the read more container."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:244
+msgid "Read More"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:249
+msgid "Date Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:255
+msgid "Hide Date"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:262
+msgid "Date Format :"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:264
+msgid "Modify the date format."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:269
+msgid "Date Wrapper"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:271
+msgid "Modify the date container."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:277
+msgid "Author Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:283
+msgid "Hide Author"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:290
+msgid "Author Link"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:297
+msgid "Author Wrapper"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:299
+msgid "Modify the author container."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:304
+msgid "Display"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:307
+msgid "Nice Name"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:308
+msgid "Display Name"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:309
+msgid "First Name"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:310
+msgid "Last Name"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:311
+msgid "User Name"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:318
+msgid "Comments Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:324
+msgid "Hide Comments"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:331
+msgid "Comments Link"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:339
+msgid "Comments Wrapper"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:341
+msgid "Comments"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:345
+msgid "Categories Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:351
+msgid "Hide Category"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:358
+msgid "Category Link"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:366
+msgid "Category Wrapper"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:368
+msgid "Modify the category container."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:373
+msgid "Tags Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:380
+msgid "Hide Tags"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:387
+msgid "Tags Link"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:396
+msgid "Tags Wrapper"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:398
+msgid "Modify the tags container."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:403
+msgid "Pagination Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:409
+msgid "Apply Pagination"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:418
+msgid "Pagination Style"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:419
+msgid "Pagination"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:428
+msgid "Posts Per Page"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/form.php:430
+msgid "Set posts to display per page. Default is 10."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/manage.php:70
+msgid "Template Title"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/manage.php:70
+msgid "Selected Rules"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/layout/views/manage.php:70
+msgid "Shortcode"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:12
+msgid "How to Use"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:14
+msgid "Go through the steps below to create your first post listing."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:18
+#, php-format
+msgid ""
+"Use our easy to use <a href=\"%s\">rules builder</a> to filter the posts "
+"which you want to display. All these rules will be available to choose when "
+"you create your template."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:23
+#, php-format
+msgid ""
+"Now <a href=\"%s\">click here</a> to create a template. You can create as "
+"many templates you want to add. Using shortcode, you can add posts listing "
+"on posts/pages or sidebar."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:28
+msgid ""
+"When done with administrative tasks, you can display posts listing on posts/"
+"pages Using shortcode. Use WP Posts Lite widget in the widgets section to "
+"display posts listing in sidebar."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:41
+msgid "Content Place holders"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:45
+msgid ""
+"Use following placeholder to create templates and display various data "
+"without any programming."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:48
+msgid "Post Title"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:49
+msgid "Post Links"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:50
+msgid "Post Content"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:51
+msgid "Featured Image"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:52
+msgid "Read More Link"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:53
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:62
+msgid "Post Date"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:54
+msgid "Author Name"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:55
+msgid "Post Comments"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:56
+msgid "Post Categories"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/overview/views/view.php:57
+msgid "Post Tags"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/model.rules.php:39
+msgid "Add Rule"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/model.rules.php:40
+msgid "Manage Rules"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/model.rules.php:134
+msgid "Rule updated successfully"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/model.rules.php:136
+msgid "Rule added successfully."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:31
+msgid "General Settings"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:31
+msgid "Genearl Setting"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:33
+msgid "Rule Title"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:35
+msgid "Enter here the rule title."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:37
+msgid "Enter Rule Title"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:41
+msgid "# of Posts"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:43
+msgid "Enter how many posts you want to display. Leave it blank for all."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:51
+msgid "Posts Offset"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:53
+msgid "Enter how many posts you want to skip from starting."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:61
+msgid "Title"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:63
+msgid "Modified Date"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:64
+msgid "Comments Count"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:65
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:117
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:183
+msgid "Author"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:66
+msgid "Random"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:69
+msgid "Order By"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:77
+msgid "In Order "
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:78
+msgid "Ascending"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:78
+msgid "Decending"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:85
+msgid "Basic Filters"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:91
+msgid "Posts with Featured Image"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:95
+msgid "Display those posts which has a featured image."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:100
+msgid "Ignore Sticky Posts"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:104
+msgid "Don't display sticky posts"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:133
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:192
+msgid "Posts Categories"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:149
+msgid "Post Formats"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:157
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:173
+msgid "Posts IDs"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:159
+msgid ""
+"Comma seperated Post Id's to show only. most of other setting will be "
+"ignored."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:167
+msgid "Exclude Posts"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:175
+msgid ""
+"Comma seperated Post Id's to hide. These posts will be not visible in your "
+"listing."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:186
+msgid "Posts by selected authors will be not visible in your listing."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:197
+msgid "Posts in selected categories will be not visible in your listing."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:203
+msgid "Date(s) Filter"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:209
+msgid "Apply Date(s) Filters"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:213
+msgid "Enable date(s) range filters."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:218
+msgid "This Week"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:219
+msgid "Last Week"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:220
+msgid "Today"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:221
+msgid "Yesterday"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:222
+msgid "This Month"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:223
+msgid "Last Month"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:226
+msgid "Period"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/form.php:236
+msgid "Save Rule"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/rules/views/manage.php:29
+msgid "All"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/modules/shortcode/views/pmp-posts-listing.php:28
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/wp-posts-lite.php:380
+msgid "Are you sure to delete item?"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/wp-posts-lite.php:129
+msgid "No taxonomies found."
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/wp-posts-lite.php:171
+#: /Applications/XAMPP/xamppfiles/htdocs/demolabs/wp-content/plugins/wp-posts-lite/wp-posts-lite.php:174
+msgid "No terms found."
+msgstr ""

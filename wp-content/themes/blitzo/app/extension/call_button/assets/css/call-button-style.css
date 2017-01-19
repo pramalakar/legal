@@ -1,0 +1,55 @@
+/**
+ *	CALL BUTTON STYLE
+ *	--------------------
+ */
+
+.rmd-call-button-container {
+	/*background-color: transparent;*/
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left: 0; 
+	z-index: 5;
+	border-top:1px solid transparent;
+	margin-bottom: -2px;
+	padding-top: 1px;
+}
+.rmd-call-button-container a {
+	/*width: auto;*/
+	text-align: center;
+	display: inline-block;
+	border-right:1px solid transparent;
+	float: left; 
+	line-height: 48px;
+	height:50px;
+	font-size: 18px; 
+	position: relative;
+	overflow: hidden;
+}
+.rmd-call-button-container a:last-child { 
+	border-right: none;
+}
+.rmd-call-button-container a:hover {
+	text-decoration: none;
+}
+
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+	footer.footer-wrapper {
+		padding-bottom: 50px;
+	}
+	.rmd-call-button-container {
+		display: block; 
+	}
+}
+  
+/* / Small Devices, Tablets /*/
+@media only screen and (min-width : 768px) { 
+	footer.footer-wrapper {
+		padding-bottom: 0px;
+	}
+	.rmd-call-button-container {
+		display: none; 
+	}
+}

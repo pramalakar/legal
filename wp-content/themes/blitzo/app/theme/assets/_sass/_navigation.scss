@@ -1,0 +1,613 @@
+// >>>----------------------------->>> NAVIGATION STYLES <<<-----------------------------<<< 
+
+
+/* The animation code */
+@keyframes nav_slide_down {
+    from { 
+        margin-top:-50px;
+    }
+    to {
+        margin-top:0px;
+    }
+} 
+
+
+// Common Navbar Style
+// ----------------------
+.navbar {
+	margin-bottom: 0px !important;
+    position: relative; 
+    padding:0px;
+    font-size:14px; 
+    background-color: $navbar_bgcolor;
+    border: none;
+    border-bottom: 1px solid $navbar_border_bottom_color; 
+
+    .container {
+    	position: relative;
+    	margin-right: auto;
+		margin-left: auto;
+		padding-left: $navbar_enclosed_px;
+		padding-right: $navbar_enclosed_px;
+    }
+  
+
+    &.floated {
+		background-color: transparent;
+		border:none !important;
+	}
+ 
+   	.navbar-collapse {
+		padding-left:0px !important;
+		padding-right:0px !important;
+
+		> div {
+			display: inline-block;
+			background:transparent;
+			float:right;
+		}
+	}
+
+	.navbar-right { 
+	    margin-right: 0px !important; 
+	}  
+
+
+	// Navbar Fixed Style
+	// ----------------------
+	&.navbar-fixed-top {
+		position: fixed;
+		top: 0px !important;
+		z-index: 9999;
+	    width: 100%;
+	    padding: 0px 0px;
+	    animation-name: nav_slide_down;
+	    animation-duration: 0.5s;  
+	    min-height: 60px !important;
+	    background-color: $sticky_navbar_bgcolor !important;
+	 	border:none !important;
+	 	border-bottom:1px solid $sticky_navbar_border_bottom_color !important;
+
+	 	.navbar-horizontal-bar {
+	 		bottom: -15px;
+	 	} 
+
+	 	.navbar-bottom-right-container {
+			display:none;
+		}
+	 	
+	 	.container { 
+			padding-left: 15px;
+			padding-right: 15px;
+		} 
+
+	    .navbar-right { 
+		    margin-right: 0px !important; 
+		} 
+ 
+		ul.navbar-nav { 
+
+			margin-top: 0px !important;
+			margin-bottom: 0px !important;
+
+			>li {   
+
+			    &:before { 
+					height: 20%;
+					top: 40%; 
+	    		}
+
+	    		>a {  
+				    line-height: 28px;
+				    padding: 14px 12px !important;   
+				} 
+			} 
+	 	}  
+	}  
+}
+
+
+// Main Navbar Style
+// ---------------------
+.navbar {
+	
+	ul.navbar-nav { 
+		position: relative;
+    	z-index: 2;
+    	margin:0px 40px; 
+
+    	> li { 
+
+    		position: relative;
+    		//border-left:1px solid $navbar_menu_link_textcolor; 
+
+
+    		// The slanting bar between the main menu links
+    		// -----------------------------------------------
+    		&:before {
+    			content:'';
+    			background-color: rgba(0,0,0,0.3);
+    			position: absolute;
+    			width:1px;
+				height: 15%;
+				top: 43%;  
+				-ms-transform: rotate(20deg); /* IE 9 */
+				-webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+				transform: rotate(20deg);
+    		}
+
+
+    		// To remove the slanting bar at the first link
+    		// -----------------------------------------------
+    		&:first-of-type {
+    			&:before {
+    				display: none;
+    			}
+    		}
+
+
+			// The actual anchor link
+    		// --------------------------
+    		> a {
+			    color: $navbar_menu_link_textcolor;
+			    font-weight: 600 !important;
+			    text-transform: uppercase; 
+			    margin: 0px; 
+			    background-color: $navbar_menu_link_bgcolor;  
+			    border: 1px solid $navbar_menu_link_border_color;
+			    margin: 0px 0px 0px 20px;  
+			    line-height: 30px !important;  
+				background-color: transparent;  
+			}
+
+
+    		// When the main menu link is hovered over
+    		// ---------------------------------------------
+    		&:hover,
+    		&:focus,
+    		&:active {
+    			> a {
+    				background-color: $navbar_menu_link_bgcolor_hover;
+			    	color: $navbar_menu_link_textcolor_hover; 
+			    	border-color: $navbar_menu_link_border_color_hover;
+    			}
+    		} 
+
+    		> a {  
+				&:hover,
+				&:focus,
+				&:active {
+					background-color: $navbar_menu_link_bgcolor_hover;
+			    	color: $navbar_menu_link_textcolor_hover; 
+			    	border-color: $navbar_menu_link_border_color_hover;
+				}
+			}
+
+			// When the link is active
+			// ---------------------------
+			&.active>a {
+				&,
+				&:hover,
+				&:focus {
+					color: $navbar_active_menu_link_textcolor !important; 
+			    	background-color: $navbar_active_menu_link_bgcolor; 
+			    	border-color: $navbar_active_menu_link_border_color !important;
+				} 
+			}
+
+    	}
+    }
+}
+
+
+// Navbar Dropdown Style
+// ---------------------------
+.navbar {
+	
+	ul.navbar-nav { 
+
+		> li { 
+
+			// When the dropdown menu is currenly open.
+			// This is usualy use if the dropdown menu is display thru onclick.
+			// ----------------------------------------------------------------------------
+			&.open>a {
+				&,
+				&:hover,
+				&:focus {
+					color: $navbar_open_menu_link_textcolor !important;
+			    	background-color: $navbar_open_menu_link_bgcolor !important;
+				}
+			} 
+
+			// Dropdown link (li tag)
+			// --------------------------
+			&.dropdown {
+
+				> a { position: relative; }
+
+				// Arrow wihtin the dropdown link
+		    	// ------------------------------------ 
+		    	> a { 
+		    		&:after {
+				    	position: absolute;
+				    	content:'';
+				    	width:20px;
+				    	height:20px;
+				    	background-color: $navbar_dropdown_top_arrow_bgcolor;
+				    	bottom:0px;
+				    	-ms-transform: rotate(45deg); /* IE 9 */
+					    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+					    transform: rotate(45deg);
+					    left:50%;
+					    margin-left:-9px;
+					    margin-bottom:-15px;
+					    display:none;
+				    } 
+		    	}
+
+		    	&:hover {
+					> a {
+						&:after {
+							display: none;
+						}
+					} 
+				} 
+
+				// The dropdown links wrapper (ul tag)
+				// ---------------------------------------
+		    	ul.dropdown-menu { 
+		    		@include hover_transition;
+
+	    			display: block;
+	    			opacity:0;
+	    			height:0px;
+	    			overflow:hidden; 
+	    			border-width:0px !important;
+
+				    background-color: $navbar_dropdown_bgcolor; 
+				    width:auto;  
+					border-color: $navbar_dropdown_container_border_color !important;
+				    padding: 0px; //5px 15px; 
+		 			box-shadow: none !important;
+
+
+		 			> li {
+
+		 				// The actual dropdown menu link
+		 				// ---------------------------------
+						> a {
+						    color: $navbar_dropdown_menu_link_textcolor; 
+						    background-color: $navbar_dropdown_menu_link_bgcolor;   
+						    border-top: 1px solid $navbar_dropdown_menu_link_border_color;  
+						    padding: 10px 0px !important;  
+						    margin:0px 20px;
+						    text-transform: uppercase;
+						    font-weight: 600 !important;
+						    width: 200px;
+
+						    &:hover,
+						    &:focus,
+						    &:active {
+						    	text-decoration: none; 
+							    background-color: $navbar_dropdown_menu_link_bgcolor_hover;	
+							    color: $navbar_dropdown_menu_link_textcolor_hover; 
+							    border-color: $navbar_dropdown_menu_link_border_color_hover;
+						    }
+					    } 
+
+					    &:first-child a,
+					    &:first-child .contact {
+							border-top: none;
+						}
+
+
+						&.active a { 
+							&,
+							&:hover,
+						    &:focus,
+						    &:active {
+						    	background-color: $navbar_dropdown_active_menu_link_bgcolor;
+					    		color: $navbar_dropdown_active_menu_link_textcolor; 
+					    		border-color: $navbar_dropdown_active_menu_link_border_color;
+						    }
+							
+						}
+
+					}   
+
+		 		}
+		 		
+
+		 		// Hover over the dropdown link then display the dropdown menu
+		 		// ---------------------------------------------------------------
+		 		&:hover,
+				&:focus {
+		    		ul.dropdown-menu {
+						height: auto;
+						opacity:1; 
+						border-width:1px !important;
+					}
+		    	}
+
+			} 
+
+		}
+
+	}
+
+}
+
+
+// Navbar Dropdown Widget Style
+// -------------------------------- 
+.navbar {
+	ul.navbar-nav { 
+
+		// Parent li for dropdown widget
+    	// -----------------------------------
+    	>li.rmd-parent-dropdown-widget,
+    	>li.dropdown.rmd-parent-dropdown-widget {
+		    position: static !important;
+		} 
+
+		> li.rmd-parent-dropdown-widget {
+
+			ul.dropdown-menu {
+
+				> li {
+
+					> a { 
+					    display: block;
+					    width: auto;
+					}
+
+					// The div - nav widget wrapper 
+					// This hold all the widget within a dropdown menu widget
+					// -----------------------------------------------------------
+					.rmd-nav-widget-wrapper  {
+
+						box-sizing: border-box;
+						overflow: hidden; 
+						width: 1140px;
+
+						.widget-area {
+							float: left;
+							padding:20px 13px 0px;
+
+							&:first-of-type {
+								padding-left:20px !important;
+							}
+
+							&:last-of-type {
+								padding-right:20px !important;
+							}
+
+							.widget { 
+								margin-top: 5px;
+								margin-bottom: 15px;
+ 
+								ul:not(.sub-menu) {
+
+									li a { 
+										display: block !important;
+									}  
+
+									// The widget list
+									// -------------------
+									> li:first-of-type {
+										border-top:none;
+									} 
+									> li:last-of-type {
+										border-bottom:none;
+									}
+
+								}
+
+								.widget-title { 
+									border-bottom:1px solid $navbar_dropdown_container_border_color;
+									padding-top:10px;
+									padding-bottom:15px; 
+								} 
+							}
+						} 
+					}
+				} 
+			} 
+    	} 
+	}
+}
+
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+	
+	.navbar {
+		ul.navbar-nav {  
+			>li.rmd-parent-dropdown-widget {
+				ul.dropdown-menu { 
+					>li .rmd-nav-widget-wrapper  {
+						width: 100%; 
+
+						&.nav-widget-column-1 .widget-area,
+						&.nav-widget-column-2 .widget-area,
+						&.nav-widget-column-3 .widget-area,
+						&.nav-widget-column-4 .widget-area {
+							width: 100%;
+						} 
+
+						.widget-area { 
+							padding:0px 0px 30px !important;
+						}
+					} 
+				}
+			} 
+		}
+	}  
+} 
+
+@media only screen and (min-width : 992px) {
+	
+	.navbar {
+		ul.navbar-nav {  
+			>li.rmd-parent-dropdown-widget {
+				ul.dropdown-menu { 
+					>li .rmd-nav-widget-wrapper  {
+						width: 940px; 
+
+						&.nav-widget-column-1 .widget-area {
+							width: 100%;
+						}
+
+						&.nav-widget-column-2 .widget-area {
+							width: 50%;
+						}
+
+						&.nav-widget-column-3 .widget-area {
+							width: 33.33333333%;
+						}
+
+						&.nav-widget-column-4 .widget-area {
+							width: 25%;
+						} 
+
+						.widget-area { 
+							padding:5px 13px 0px !important;
+ 
+						} 
+					} 
+				}
+			} 
+		}
+	}  
+}
+ 
+@media only screen and (min-width : 1200px) { 
+	.navbar {
+		ul.navbar-nav {  
+			>li.rmd-parent-dropdown-widget {
+				ul.dropdown-menu { 
+					>li .rmd-nav-widget-wrapper  {
+						width: 1140px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+// Navbar Toggle Style
+// ----------------------- 
+.navbar {
+	.navbar-toggle {
+	    border:none;
+	    position: absolute;
+	    left: 0;
+	    margin:0px !important;
+	    margin-top: 21px !important;
+    	margin-left: 7px !important;
+    	padding-right:10px;
+    	background-color: $navbar_toogle_bgcolor !important;
+
+	    &:hover,
+	    &:focus {
+	    	background-color: $navbar_toogle_bgcolor_hover !important;
+
+	    	.icon-bar {
+			    background-color: $navbar_toogle_icon_bar_color_hover !important;
+			}
+
+	   	}
+
+	   	.icon-bar {
+		    background-color: $navbar_toogle_icon_bar_color !important;
+		    width: 25px;
+		    height: 3px; 
+		}
+		.icon-bar+.icon-bar {
+		    margin-top: 6px;
+		}
+		.icon-bar+.icon-bar+.icon-bar {
+		    margin-top: 6px;
+		}
+
+		.top-bar {
+			transform: rotate(0);
+		}
+		.middle-bar {
+			opacity: 1;
+		}
+		.bottom-bar {
+			transform: rotate(0);
+		}
+	   	 
+	}
+
+	&.navbar-fixed-top {
+		.navbar-toggle {  
+		    margin-top:11px !important;  
+
+		    background-color: $sticky_navbar_toogle_bgcolor !important;
+
+		    &:hover,
+		    &:focus {
+		    	background-color: $sticky_navbar_toogle_bgcolor_hover !important;
+
+		    	.icon-bar {
+				    background-color: $sticky_navbar_toogle_icon_bar_color_hover !important;
+				}
+
+		   	}
+
+		    .icon-bar {
+			    background-color: $sticky_navbar_toogle_icon_bar_color !important; 
+			}  
+		}
+	}
+}
+
+
+
+.canvas-slid .navbar .navbar-toggle { 
+	border: none;
+	padding-right:1px;
+ 
+	.icon-bar {
+		width: 33px;
+		transition: all 0.2s;
+	}
+	.top-bar {
+		transform: rotate(45deg);
+		transform-origin: 10% 10%;
+	}
+	.middle-bar {
+		opacity: 0;
+	}
+	.bottom-bar {
+		transform: rotate(-45deg);
+		transform-origin: 10% 90%;
+	}
+}
+ 
+
+@media only screen and (min-width : 992px) {
+
+	.navbar {
+ 
+		ul.navbar-nav {
+
+			margin-top: 0px !important;
+			margin-bottom: 0px !important;
+
+			> li > a { 
+		        padding: 30px 12px !important;  
+		        margin: 0px; 
+		    }
+		}
+	} 
+
+}
+ 
+ 

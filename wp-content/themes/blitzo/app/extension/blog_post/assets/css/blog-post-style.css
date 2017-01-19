@@ -1,0 +1,105 @@
+/**
+ *  GOOGLE MAP STYLE
+ *	------------------
+ */
+
+.latest-post-wrapper {
+
+}
+ 
+.latest-post-wrapper .latest-post-container {
+	background-color: transparent;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.latest-post-wrapper .latest-post-container .featured-image,
+.latest-post-wrapper .latest-post-container .featured-image-xs {
+	width:100%; 
+	background: no-repeat center top; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+    margin-bottom: 15px;
+}
+
+.latest-post-wrapper .latest-post-container.col-num-3 .featured-image {
+	height:250px;
+}
+.latest-post-wrapper .latest-post-container.col-num-4 .featured-image {
+	height:180px;
+}
+
+.latest-post-wrapper .latest-post-container .post-title {
+	font-size: 20px;
+	line-height: 1.2em;
+    text-align: left;
+    margin-bottom: 10px;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.latest-post-wrapper .latest-post-container .post-content {
+	font-size: 14px;
+    line-height: 1.4em;
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+
+.latest-post-wrapper .latest-post-container .read-more-link {
+	margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    display: block;
+}
+
+.latest-post-wrapper .latest-post-container .date-posted {
+	opacity: .7;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4em;
+    text-transform: none;
+    display: block;
+}
+
+
+/* / Small Devices, Phones / */
+@media only screen and (min-width : 320px), (max-width: 320px){  
+	.latest-post-wrapper .latest-post-container .post-title { 
+		text-overflow: initial;
+		white-space: normal;
+	}
+}
+ 
+
+/* / Small Devices, Tablets /*/
+@media only screen and (min-width : 768px) {
+    .latest-post-wrapper .latest-post-container.col-num-3 .featured-image {
+		height:250px;
+	}
+	.latest-post-wrapper .latest-post-container.col-num-4 .featured-image {
+		height:180px;
+	}
+	.latest-post-wrapper .latest-post-container .post-title { 
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+/*/ Medium Devices, Desktops /*/
+@media only screen and (min-width : 992px) {
+    .latest-post-wrapper .latest-post-container.col-num-3 .featured-image {
+		height:250px;
+	}
+	.latest-post-wrapper .latest-post-container.col-num-4 .featured-image {
+		height:180px;
+	}
+	 
+}
+ 
+
+
+ 

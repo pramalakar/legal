@@ -1,0 +1,94 @@
+/**
+ *  TESTIMONIAL STYLE
+ *  --------------------
+ */
+
+.rmd-testimonial-wrapper {
+    position: relative;
+    padding:10px 10px;  
+    width: 100%;
+    display: block;
+    //float: left;
+    color: #6b6a6a;
+
+} 
+.rmd-testimonial-wrapper .carousel-control .icon-prev, 
+.rmd-testimonial-wrapper .carousel-control .glyphicon-chevron-left {
+    left: 10%;
+    margin-left: -10px;
+}
+.rmd-testimonial-wrapper .carousel-control .icon-next, 
+.rmd-testimonial-wrapper .carousel-control .glyphicon-chevron-right {
+    right: 10%;
+    margin-right: -10px;
+}
+.rmd-testimonial-wrapper .rmd-testimonial-content-container {
+    position: relative;
+    z-index: 2;
+} 
+.rmd-testimonial-wrapper .carousel {
+    height: auto;
+}
+.rmd-testimonial-wrapper .carousel blockquote {
+    text-align: center;
+    background-color: transparent;
+    color: #000;
+    min-height:80px;
+    margin-bottom: 0px; 
+    border:none;
+    padding:0px; 
+} 
+.rmd-testimonial-wrapper .carousel .carousel-indicators {
+    bottom: -40px;
+}
+.rmd-testimonial-wrapper .carousel .carousel-indicators li {
+    background-color: #000;
+    border:none;
+    width: 12px;
+    height: 12px;
+    margin: 20px 5px 0px;
+    opacity: 0.5;
+}
+.rmd-testimonial-wrapper .carousel .carousel-indicators li:hover,
+.rmd-testimonial-wrapper .carousel .carousel-indicators .active { 
+    opacity: 1;
+}
+ 
+.rmd-testimonial-wrapper .carousel .carousel-control {
+    background-image: none;
+    background-color: transparent;
+    color: #6b6a6a;
+    width:40%;
+} 
+.rmd-testimonial-wrapper .testimonial-photo-container {
+    width:100px;
+    height:100px;  
+    border-radius: 50%;
+    margin: 0px auto 15px; 
+    position: relative;
+    background-color: transparent;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+} 
+.rmd-testimonial-wrapper .carousel blockquote .testimonial-content,
+.rmd-testimonial-wrapper .carousel blockquote .testimonial-name,
+.rmd-testimonial-wrapper .carousel blockquote .testimonial-designation {
+    font-style: italic;
+    display: block;
+    text-align: left;
+} 
+.rmd-testimonial-wrapper .carousel blockquote .testimonial-content {
+    padding: 0px 5px 10px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 400; 
+} 
+.rmd-testimonial-wrapper .carousel blockquote .testimonial-name { 
+    font-weight: bold;
+} 
+.rmd-testimonial-wrapper .carousel blockquote .testimonial-designation {
+    font-size: 13px;
+    margin:5px 0px;
+} 
+ 

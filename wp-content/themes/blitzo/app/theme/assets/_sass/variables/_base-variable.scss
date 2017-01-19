@@ -1,0 +1,87 @@
+
+// >>>----------------------------->>> BASE STYLES <<<-----------------------------<<< 
+ 
+$primary_color: #272727; 	// usually for background
+$secondary_color: #777; 	// usually for text
+ 
+
+$body_color: $secondary_color;
+
+
+// Headings Color
+// ------------------
+$heading_color: $primary_color; 
+
+
+// Text Color
+// --------------
+$common_textcolor: $secondary_color;
+
+
+// Link Text Color
+// -------------------
+$common_link_textcolor: $primary_color;
+$common_link_textcolor_hover: $secondary_color;
+
+
+// Borders Color
+// ----------------
+$common_border_color: #ddd;
+$common_input_border_color: $common_border_color;
+
+
+// For widget form input
+// -------------------------
+$widget_form_input_border_color: $common_input_border_color;
+ 
+ 
+// Search Form
+// ----------------
+$search_form_input_border_color: $primary_color; 
+
+$search_form_button_textcolor: #fff;  
+$search_form_button_bgcolor: $primary_color;
+$search_form_button_border_color: $primary_color;
+
+$search_form_button_textcolor_hover: $search_form_button_textcolor;  
+$search_form_button_bgcolor_hover: $search_form_button_bgcolor;
+$search_form_button_border_color_hover: $search_form_button_border_color;
+
+
+// Error 404
+// -------------
+$error_404_color: $primary_color;
+
+
+// Back To Top
+// --------------
+$back_to_top_bgcolor: $primary_color; 
+$back_to_top_border_color: $primary_color; 
+$back_to_top_textcolor: #fff; 
+$back_to_top_radius: 50%;
+
+
+// Call Button
+// ---------------
+$call_button_color: #fff;
+$call_button_bgcolor: $secondary_color;
+$call_button_border_color: rgba(255,255,255,0.3);
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

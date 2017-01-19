@@ -1,0 +1,40 @@
+
+
+@mixin hover_transition($seconds:0.5s) {
+	-webkit-transition: all $seconds !important;
+	-moz-transition: all $seconds !important;
+	-ms-transition: all $seconds !important;
+	/* IE10 is actually unprefixed */
+	-o-transition: all $seconds !important;
+	transition: all $seconds !important;
+}
+
+@mixin background_gradient($bgurl:'app/theme/assets/images/horizontal-bar.jpg') {
+	background-image: url($bgurl);
+	background-color: transparent;
+	background-repeat: repeat-y;
+	-webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;  
+}
+
+
+@mixin horizontal_bar($height:8px, $bgurl:'app/theme/assets/images/horizontal-bar.jpg') {
+	@include background_gradient($bgurl); 
+	width:100vw;
+    left:-50vw !important;  
+    margin-left:50% !important;
+    height: $height;    
+}
+
+
+@mixin empty_space($height:15px) {
+	width:100%; 
+	height:$height;
+}
+
+
+
+
+

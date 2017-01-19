@@ -1,0 +1,121 @@
+// >>>----------------------------->>> NAVIGATION STYLES <<<-----------------------------<<< 
+
+$navbar_bgcolor: #fff; 
+$navbar_border_bottom_color: $common_border_color;
+$navbar_enclosed_px: 15px; // Default 15px // This will push the logo and navbar inside the container.
+
+
+// Main Menu 
+// ------------
+$navbar_menu_link_textcolor: rgba(0,0,0,0.5);  
+$navbar_menu_link_textcolor_hover: #000; 
+
+$navbar_menu_link_border_color: transparent;
+$navbar_menu_link_border_color_hover: transparent;
+
+$navbar_menu_link_bgcolor: transparent;  
+$navbar_menu_link_bgcolor_hover: transparent;
+
+$navbar_active_menu_link_textcolor: #000; 
+$navbar_active_menu_link_bgcolor: transparent;
+$navbar_active_menu_link_border_color: transparent; 
+
+
+
+// Dropdown Menu 
+// -----------------
+$navbar_open_menu_link_textcolor: #000; 
+$navbar_open_menu_link_bgcolor: transparent;
+
+$navbar_dropdown_bgcolor: #fff; 
+$navbar_dropdown_top_arrow_bgcolor: $common_border_color; 
+$navbar_dropdown_container_border_color: #ddd;
+
+$navbar_dropdown_menu_link_textcolor: rgba(0,0,0,0.5);
+$navbar_dropdown_menu_link_textcolor_hover: #000;
+
+$navbar_dropdown_menu_link_border_color: rgba(0,0,0,0.1);
+$navbar_dropdown_menu_link_border_color_hover: $navbar_dropdown_menu_link_border_color;
+
+$navbar_dropdown_menu_link_bgcolor: transparent; 
+$navbar_dropdown_menu_link_bgcolor_hover: transparent; 
+
+$navbar_dropdown_active_menu_link_textcolor: #000;
+$navbar_dropdown_active_menu_link_bgcolor: transparent; 
+$navbar_dropdown_active_menu_link_border_color: $navbar_dropdown_menu_link_border_color; 
+
+
+
+
+// Navbar Toogle
+// ----------------
+$navbar_toogle_icon_bar_color: $primary_color;
+$navbar_toogle_icon_bar_color_hover: $primary_color;
+$navbar_toogle_bgcolor: transparent; 
+$navbar_toogle_bgcolor_hover: transparent;
+
+
+
+// Sticky Navbar
+// ----------------
+$sticky_navbar_bgcolor: $navbar_bgcolor; 
+$sticky_navbar_border_bottom_color: $common_border_color;
+
+ 
+// Sticky Navbar Toogle
+// ----------------------
+$sticky_navbar_toogle_icon_bar_color: $primary_color;
+$sticky_navbar_toogle_icon_bar_color_hover: $primary_color;
+$sticky_navbar_toogle_bgcolor: transparent; 
+$sticky_navbar_toogle_bgcolor_hover: transparent;
+
+
+
+// Google Map Wrapper
+// This is placed here so that i can able to access the $navbar_bgcolor.
+// -----------------------------------------------------------------------------------
+$banner_google_map_bgcolor: $navbar_bgcolor;
+
+
+
+
+// Navbar Widget Title
+// -----------------------
+$navbar_widget_title_textcolor: $primary_color;
+
+
+
+// Navbar Widget Calendar
+// -------------------------
+$navbar_widget_calendar_caption_textcolor : $primary_color;
+$navbar_widget_calendar_border_color : $primary_color; 
+$navbar_widget_calendar_active_date_bgcolor : $primary_color;
+$navbar_widget_calendar_active_date_textcolor : #fff;
+$navbar_widget_calendar_th_textcolor: $primary_color;
+$navbar_widget_calendar_td_textcolor: $primary_color;
+ 
+
+// Navbar Widget Form Input Border
+// ----------------------------------
+$navbar_widget_form_input_border_color: $primary_color;
+
+
+
+// Navbar Widget Menu
+// ----------------------
+$navbar_widget_menu_border_color: #ddd;
+$navbar_widget_menu_link_textcolor: $common_link_textcolor_hover;
+$navbar_widget_menu_link_textcolor_hover: $common_link_textcolor;
+
+
+// Navbar Search Form
+// -----------------------
+$navbar_search_form_input_border_color: $primary_color; 
+
+$navbar_search_form_button_textcolor: #fff;
+$navbar_search_form_button_bgcolor: $primary_color;
+$navbar_search_form_button_border_color: $primary_color;
+
+$navbar_search_form_button_textcolor_hover: $navbar_search_form_button_textcolor;
+$navbar_search_form_button_bgcolor_hover: $navbar_search_form_button_bgcolor;
+$navbar_search_form_button_border_color_hover: $navbar_search_form_button_border_color;

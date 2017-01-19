@@ -1,0 +1,272 @@
+// >>>----------------------------->>> BUTTON STYLES <<<-----------------------------<<< 
+
+ 
+// Button Style
+// --------------------------------------------------------------------------------
+
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+	@include rmd_theme_button; 
+} 
+
+
+.btn { 
+	border-width:2px; 
+	border-radius: $button_border_radius;  
+	white-space: normal !important;
+
+ 	&.btn-3d {
+		box-shadow: -4px 3px 0px 0px rgb(100,100,100);
+		margin-left:4px;
+		margin-bottom:3px;
+	}
+
+	&.btn-xs {
+		border-width:1px;    
+	}
+	&.btn-sm {
+		border-width:2px;    
+	} 
+}
+
+@media only screen and (min-width : 320px), (max-width: 320px) { 
+	.btn {
+		&.btn-lg,
+		&.btn-xl {
+			border-width:2px;   
+
+			@include rmd_default_button_size; 
+		}  
+	}
+}
+
+@media only screen and (min-width : 768px) { 
+	.btn {
+		&.btn-lg {
+			border-width:3px;  
+			padding: 10px 16px; 
+		} 
+		&.btn-xl {
+			border-width:4px;
+			padding:11px 22px;
+			font-size: 20px;
+	    	line-height: 1.3333333; 
+		} 
+	}
+}
+
+
+
+@media only screen and (min-width : 320px), (max-width: 320px) {
+	 
+	.btn {  
+		&.btn-len-xs {  
+			padding-left:7px;
+			padding-right:7px;
+		}
+		&.btn-len-sm {  
+			padding-left:11px;
+			padding-right:11px;
+		}
+		&.btn-len-md {  
+			padding-left:19px;
+			padding-right:19px;
+		}
+		&.btn-len-lg {  
+			padding-left:25px;
+			padding-right:25px;
+		} 
+		&.btn-len-xl {  
+			padding-left:31px;
+			padding-right:31px;
+		} 
+	}
+} 
+@media only screen and (min-width : 768px) {
+    .btn {  
+		&.btn-len-xs {  
+			padding-left:20px;
+			padding-right:20px;
+		}
+		&.btn-len-sm {  
+			padding-left:33px;
+			padding-right:33px;
+		}
+		&.btn-len-md {  
+			padding-left:49px;
+			padding-right:49px;
+		}
+		&.btn-len-lg {  
+			padding-left:66px;
+			padding-right:66px;
+		} 
+		&.btn-len-xl {  
+			padding-left:90px;
+			padding-right:90px;
+		} 
+	} 
+}
+
+
+
+
+// Button Colors
+// -----------------
+.btn {
+	&.btn-primary { 
+		@include rmd_button(#fff, #337ab7, #fff, #286090);
+		&.btn-outline { 
+			@include rmd_button_outline(#337ab7, #286090);
+		}
+		&.btn-outline-solid { 
+			@include rmd_button_outline_solid(#337ab7, #286090);
+		}
+		&.btn-solid-outline { 
+			@include rmd_button_solid_outline(#337ab7, #286090);
+		}
+	}
+
+	&.btn-danger {  
+		@include rmd_button(#fff, #d9534f, #fff, #c9302c);
+		&.btn-outline { 
+			@include rmd_button_outline(#d9534f, #c9302c);
+		}
+		&.btn-outline-solid { 
+			@include rmd_button_outline_solid(#d9534f, #c9302c);
+		}
+		&.btn-solid-outline { 
+			@include rmd_button_solid_outline(#d9534f, #c9302c);
+		}
+	}
+
+	&.btn-warning { 
+		@include rmd_button(#fff, #f0ad4e, #fff, #ec971f);
+		&.btn-outline { 
+			@include rmd_button_outline(#f0ad4e, #ec971f);
+		}
+		&.btn-outline-solid { 
+			@include rmd_button_outline_solid(#f0ad4e, #ec971f);
+		}
+		&.btn-solid-outline { 
+			@include rmd_button_solid_outline(#f0ad4e, #ec971f);
+		}
+	}
+
+	&.btn-info { 
+		@include rmd_button(#fff, #31b0d5, #fff, #269abc);
+		&.btn-outline { 
+			@include rmd_button_outline(#31b0d5, #269abc);
+		}
+		&.btn-outline-solid { 
+			@include rmd_button_outline_solid(#31b0d5, #269abc);
+		}
+		&.btn-solid-outline { 
+			@include rmd_button_solid_outline(#31b0d5, #269abc);
+		}
+	}
+
+	&.btn-success { 
+		@include rmd_button(#fff, #5cb85c, #fff, #449d44);
+		&.btn-outline { 
+			@include rmd_button_outline(#5cb85c, #449d44);
+		}
+		&.btn-outline-solid { 
+			@include rmd_button_outline_solid(#5cb85c, #449d44);
+		}
+		&.btn-solid-outline { 
+			@include rmd_button_solid_outline(#5cb85c, #449d44);
+		}
+	}
+
+	&.btn-default { 
+		@include rmd_button(#000, #ddd, #000, #ccc);
+		&.btn-outline { 
+			@include rmd_button_outline(#ddd, #ccc);
+		}
+		&.btn-outline-solid { 
+			@include rmd_button_outline_solid(#ddd, #ccc);
+		}
+		&.btn-solid-outline { 
+			@include rmd_button_solid_outline(#ddd, #ccc);
+		}
+	}
+
+	&.btn-white { 
+		@include rmd_button(#000, #fff, #000, #fff);
+		&.btn-outline { 
+			@include rmd_button_outline(#fff, #fff);
+		}
+		&.btn-outline-solid { 
+			@include rmd_button_outline_solid(#fff, #fff);
+		}
+		&.btn-solid-outline { 
+			@include rmd_button_solid_outline(#fff, #fff);
+		}
+	}
+	&.btn-black {
+		@include rmd_button(#fff, #000, #fff, #252525);
+		&.btn-outline { 
+			@include rmd_button_outline(#000, #252525);
+		} 
+		&.btn-outline-solid { 
+			@include rmd_button_outline_solid(#000, #252525);
+		}
+		&.btn-solid-outline { 
+			@include rmd_button_solid_outline(#000, #252525);
+		}
+	}
+	 
+	&.btn-theme {
+		@include rmd_theme_button;
+	} 
+	
+
+	//	Entity    Hexcode   Description
+	//	&nbsp;    \00a0     A space
+	//	&#9664;   \25c0     Left arrow with no tail.
+	//	&#9656;   \25b8     Right arrow with no tail.
+	//	&#9662;   \25be     Down arrow with no tail.
+	//	&larr;    \2190     Left arrow with a tail.
+	// 	&rarr;    \2192     Right arrow with a tail.
+
+	&.btn-arrow { 
+ 		&:after {  
+ 			@include hover_transition(0.3s); 
+			content: '\00a0\2192'; 
+			font-size:1px; 
+		}
+		&:hover,
+		&:focus {
+			 
+			&:after {  
+				font-size:inherit;    
+			}
+		}
+	}
+}
+
+
+
+// Button Border Radius
+// ------------------------
+.btn {
+	&.btn-curve {
+		border-radius:6px !important;
+
+		&.btn-xs {
+			border-radius:4px !important;
+		}
+		&.btn-sm {
+			border-radius:6px !important;
+		}
+		&.btn-lg {
+			border-radius:8px !important;
+		}
+		&.btn-xl {
+			border-radius:10px !important;
+		} 
+	}
+
+	&.btn-rounded {
+		border-radius:700px !important;
+	}
+}

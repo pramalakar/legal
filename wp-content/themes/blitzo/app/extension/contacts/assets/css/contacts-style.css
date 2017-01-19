@@ -1,0 +1,57 @@
+/**
+ *  CONTACTS STYLE
+ *	-----------------
+ */
+
+.contacts-wrapper { 
+	 
+}
+ 
+.contacts-wrapper .contacts .email,
+.contacts-wrapper .contacts .phone { 
+    color: #333; 
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 7px;
+}
+.contacts-wrapper .contacts .email a,
+.contacts-wrapper .contacts .email a:hover,
+.contacts-wrapper .contacts .email a:focus {
+	color: #333; 
+} 
+.contacts-wrapper .contacts .email span,
+.contacts-wrapper .contacts .phone span {
+	margin-right: 2px;
+}
+
+
+
+/* / Small Devices, Phones / */
+@media only screen and (min-width : 320px), (max-width: 320px){  
+	 
+}
+ 
+/* / Extra Small Devices, Phones / */
+@media only screen and (min-width : 480px) {
+	 
+}
+
+/* / Small Devices, Tablets /*/
+@media only screen and (min-width : 768px) {
+    
+}
+
+/*/ Medium Devices, Desktops /*/
+@media only screen and (min-width : 992px) {
+     
+ 
+}
+
+/*/ Large Devices, Wide Screens /*/
+@media only screen and (min-width : 1200px) {
+ 	 
+}
+
+
+ 

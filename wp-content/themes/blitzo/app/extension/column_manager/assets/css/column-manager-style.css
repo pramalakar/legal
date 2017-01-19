@@ -1,0 +1,117 @@
+/**
+ *  COLUMN MANAGER STYLE
+ *  ------------------------
+ */
+.rmd-column-manager-wrapper {
+    background-color: transparent;
+    padding:0px; 
+    position: relative; 
+    width: 100%;
+    display: block;
+    float: left; 
+}
+
+.rmd-column-manager-wrapper .rmd-cm-background-image {
+    background-repeat: repeat;
+    background-position: top left;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+}
+
+
+/* The background position */
+.rmd-column-manager-wrapper.bgpos-image-color .rmd-cm-background-image {
+    z-index: 1;
+}
+.rmd-column-manager-wrapper.bgpos-image-color .rmd-cm-overlay {
+    z-index: 2;
+} 
+.rmd-column-manager-wrapper.bgpos-color-image .rmd-cm-background-image {
+    z-index: 2;
+}
+.rmd-column-manager-wrapper.bgpos-color-image .rmd-cm-overlay {
+     z-index: 1;
+}
+
+
+/* The background size */
+.rmd-column-manager-wrapper.bgsize-fixed .rmd-cm-background-image {
+    background-repeat: no-repeat; 
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+}
+.rmd-column-manager-wrapper.bgsize-horizontal .rmd-cm-background-image {
+    background-repeat: repeat-y; 
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+} 
+.rmd-column-manager-wrapper.bgsize-vertical .rmd-cm-background-image {
+    background-repeat: repeat-x; 
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+}
+.rmd-column-manager-wrapper.bgsize-cover .rmd-cm-background-image {
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.rmd-column-manager-wrapper.bgsize-parallax .rmd-cm-background-image {
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/* The background image alignment */
+.rmd-column-manager-wrapper.bgsize-fixed.bgalign-left .rmd-cm-background-image {
+    background-position: top left;
+}
+.rmd-column-manager-wrapper.bgsize-fixed.bgalign-center .rmd-cm-background-image {
+    background-position: top center;
+}
+.rmd-column-manager-wrapper.bgsize-fixed.bgalign-right .rmd-cm-background-image {
+    background-position: top right;
+}
+
+.rmd-column-manager-wrapper .column-wrapper { 
+    overflow: visible;
+    position: relative;
+    z-index: 3;
+}  
+.rmd-column-manager-wrapper .column-wrapper .column-overlay {
+    position: absolute;
+    display: block;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; 
+} 
+
+.rmd-column-manager-wrapper .column-wrapper .column-content-container {
+    position: relative;
+    z-index: 1;
+
+}
+
+   
+
+ 
+   

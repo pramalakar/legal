@@ -1,0 +1,93 @@
+// Mixins for Widgets
+// --------------------------------------------------------------------------------
+
+@mixin widget_list($border_color:#ddd, $link_textcolor: #000, $link_textcolor_hover: #000, $text_transform:none, $font_weight:normal) {
+	.widget { 
+		ul > li,
+		ul.menu > li ,
+		ul.menu > li > ul.sub-menu > li,
+		ul.menu > li > ul.sub-menu > li > ul.sub-menu > li { 
+			border-bottom-color: $border_color !important; 
+		}
+
+		ul > li:first-child,
+		ul.menu > li:first-child,
+		ul.menu > li > ul.sub-menu > li:first-child, 
+		ul.menu > li > ul.sub-menu > li > ul.sub-menu > li:first-child {
+		    border-top-color: $border_color !important;
+		}   
+		ul li a {
+			color: $link_textcolor; 
+			text-transform: $text_transform !important;
+			font-weight: $font_weight;
+			
+			&:hover {
+				color: $link_textcolor_hover !important;
+			}
+		}
+	}
+}
+
+
+@mixin widget_calendar($caption_textcolor:#000, $border_color:#000, $th_textcolor:#000, $td_textcolor:#000, $active_date_bgcolor:#000, $active_date_textcolor:#fff) {
+	.calendar_wrap {  
+	    table#wp-calendar {   
+		    caption {
+			    color: $caption_textcolor !important;
+			} 
+			thead tr {  
+			    border-color: $border_color !important; 
+			} 
+ 
+			tbody td {  
+			    border-color: $border_color !important; 
+			} 
+			thead th,  {
+				color: $th_textcolor !important;
+			}
+			tbody td,  {
+				color: $td_textcolor !important;
+			}
+			tbody td a {
+			    background-color: $active_date_bgcolor !important; 
+			    color: $active_date_textcolor !important;
+			} 
+			tfoot td a { 
+				&,
+			    &:hover,
+			    &:focus,
+			    &:active {
+			    	color: $caption_textcolor !important;
+			    }
+			}  
+		}  
+	} 
+}
+
+
+@mixin widget_search($input_border_color:#252525, $button_textcolor:#fff, $button_bgcolor:#252525,  $button_border_color:#252525,  $button_textcolor_hover:#fff, $button_bgcolor_hover:#252525,  $button_border_color_hover:#252525) {
+	.widget.widget_search {
+        .search-form { 
+            margin-bottom: 0px !important;
+
+            .form-control {  
+                border-color: $input_border_color !important; 
+            }
+
+            .btn-default {   
+                
+                background-color: $button_bgcolor !important;
+                border-color: $button_border_color !important;
+                color: $button_textcolor !important;
+
+                &:hover,
+                &:focus {
+                    background-color: $button_bgcolor_hover !important;
+                    border-color: $button_border_color_hover !important;
+                    color: $button_textcolor_hover !important;
+                }
+            } 
+        }
+    } 
+}
+

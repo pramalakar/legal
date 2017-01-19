@@ -1,0 +1,142 @@
+
+
+// Mixins for buttons
+// --------------------------------------------------------------------------------
+
+@mixin rmd_button($textcolor:#fff, $bgcolor:#337ab7, $textcolor_hover:#fff, $bgcolor_hover:#286090) {
+	color: $textcolor !important;
+    background-color: $bgcolor !important;
+    border-color: $bgcolor !important;
+
+    &:hover,
+	&:focus,
+	&:active {
+		color: $textcolor_hover !important;
+		background-color: $bgcolor_hover !important;
+		border-color: $bgcolor_hover !important;
+
+        &:before,
+        &:after {
+            color: $textcolor_hover !important;
+        }
+	}
+}
+
+
+@mixin rmd_button_outline($color:#000, $color_hover:#286090) {
+	color: $color !important;
+	background-color: transparent !important;
+	border-color: $color !important;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color_hover !important;
+		background-color: transparent !important;
+		border-color: $color_hover !important;
+
+        &:before,
+        &:after {
+            color: $color_hover !important;
+        }
+	}
+}
+
+
+@mixin rmd_button_outline_solid($color:#000, $color_hover:#286090) {
+    color: $color !important;
+    background-color: transparent !important;
+    border-color: $color !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff !important;
+        background-color: $color_hover !important;
+        border-color: $color_hover !important;
+
+        &:before,
+        &:after {
+            color: #fff !important;
+        }
+    }
+}
+
+
+@mixin rmd_button_solid_outline($color:#000, $color_hover:#286090) {
+    color: #fff !important;
+    background-color: $color !important;
+    border-color: $color !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color !important;
+        background-color: transparent !important;
+        border-color: $color_hover !important;
+
+        &:before,
+        &:after {
+            color: $color_hover !important;
+        }
+    }
+}
+
+
+
+@mixin rmd_theme_button() {
+	@include hover_transition;
+	@include rmd_button($theme_button_textcolor, $theme_button_bgcolor, $theme_button_textcolor_hover, $theme_button_bgcolor_hover);
+
+	border-radius: $button_border_radius;  
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; 
+    white-space: nowrap;   
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+    border-style: solid;
+    
+    &.btn-outline {
+    	@include rmd_button_outline($theme_button_bgcolor, $theme_button_bgcolor_hover);
+    }
+    &.btn-outline-solid {
+        @include rmd_button_outline_solid($theme_button_bgcolor, $theme_button_bgcolor_hover);
+    }
+    &.btn-solid-outline {
+        @include rmd_button_solid_outline($theme_button_bgcolor, $theme_button_bgcolor_hover);
+    }
+}
+
+
+@mixin rmd_button_icon($size, $bgurl, $padding_left) {
+	background-image: url($bgurl) !important; 
+	background-repeat: no-repeat !important;
+	background-position: 7px center !important;
+	font-weight:bold !important;
+
+	-webkit-background-size: auto $size !important;
+    -moz-background-size: auto $size !important;
+    -o-background-size: auto $size !important;
+    background-size: auto $size !important;  
+
+    padding-left: $padding_left !important; 
+}
+
+  
+
+@mixin rmd_default_button_size() {  
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143; 
+}
+
+
+    

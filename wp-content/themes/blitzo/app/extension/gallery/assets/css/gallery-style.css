@@ -1,0 +1,263 @@
+/**
+ *	GALLERY STYLE
+ *	---------------
+ */
+.rmd-gallery-wrapper { 
+    background-color: transparent;
+    position: relative; 
+    width: 100%;
+    display: block;
+    //float: left;
+    overflow: hidden;
+}  
+.rmd-gallery-wrapper.layout-fluid {
+	width: 100vw; 
+	margin-left: -50vw;
+	left: 50%;
+}
+.rmd-gallery-wrapper .row {
+	margin-left: -15px !important;
+	margin-right: -15px !important;
+}
+.rmd-gallery-wrapper.layout-fluid .row {
+	margin-left: -10px !important;
+	margin-right: -10px !important;
+}
+
+
+.rmd-gallery-wrapper .item-container {
+	width: 100%;
+	overflow: hidden; 
+	background: transparent no-repeat top center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	position: relative; 
+	height: auto; 
+	display: flex; 
+	justify-content:center;
+	align-items:center;
+	z-index: 2; 
+	height: auto; 
+}
+.rmd-gallery-wrapper .item-container img{ 
+	width: 100%;
+	height: auto;
+}
+
+.rmd-gallery-wrapper .item-container .button-container  { 
+	background-color: transparent; 
+	position: absolute;
+	z-index: 3;  
+} 
+
+.rmd-gallery-wrapper .item-container .button-container .button-label { 
+	padding:5px 20px;  
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	font-style: italic;
+    font-size: 20px;
+    position: relative;
+}
+
+.rmd-gallery-wrapper .item-container .button-container .button-label span {
+	position: relative;
+	z-index: 2;
+}
+
+.rmd-gallery-wrapper .item-container .button-container .button-label .button-label-overlay {
+	position: absolute;
+	background-color: #131313;
+	width: 100%;
+	height: 100%;
+	top:0px;
+	left:0px;
+	z-index: 1;
+	opacity: 0.6;
+}
+
+.rmd-gallery-wrapper .item-container .overlay {
+	width: 100%;
+	height: 100%;
+	top:0px;
+	right: 0px;
+	bottom: 0px;
+	left:0px; 
+	position: absolute; 
+	z-index: 2; 
+}
+ 
+
+.rmd-gallery-wrapper .item-container:hover .overlay {
+	opacity: 0.1 !important;
+}
+
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+    .rmd-gallery-wrapper .item-container .overlay {
+  		opacity: 0.3 !important;
+  	} 
+}
+ 
+
+/* / Small Devices, Tablets /*/
+@media only screen and (min-width : 768px) { 
+	
+	.rmd-gallery-wrapper .item-container .overlay { 
+		opacity: 1 !important; 
+		-webkit-transition: opacity 1s;
+		-moz-transition: opacity 1s;
+		-ms-transition: opacity 1s;  
+		-o-transition: opacity 1s;
+		transition: opacity 1s;
+	}
+}
+
+  
+
+/**
+ *	LIGHTBOX 
+ *	------------
+ */ 
+
+/* The Modal (background) */
+.ligtbox-modal {
+	display: none;
+	position: fixed; 
+	margin-top: 15vh;
+	left: 5%;
+	top: 0;
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	background-color: transparent;
+	z-index: 9999; 
+}
+
+/* Modal Content */
+.ligtbox-modal .content-container {
+	position: relative;
+	background-color: transparent;
+	margin: auto;
+	padding: 0;
+	width: 100%; 
+}
+.ligtbox-modal .content-container {  
+	position: relative;
+	overflow: hidden;
+}
+
+.ligtbox-modal .content-container .image-contaner {
+	display: block;
+	text-align: center;
+	background-color: #fff !important;
+	height: 70vh !important;
+	width: 100% !important;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ligtbox-modal .content-container img {
+	max-height: 70vh !important;
+	max-width: 70vw !important;
+	width: auto;
+}
+
+/* Next & previous buttons */
+.ligtbox-modal .content-container .prev,
+.ligtbox-modal .content-container .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -30px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Position the "next button" to the right */
+.ligtbox-modal .content-container .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.ligtbox-modal .content-container .prev:hover,
+.ligtbox-modal .content-container .next:hover,
+.ligtbox-modal .content-container .prev:focus,
+.ligtbox-modal .content-container .next:focus {
+  	background-color: rgba(0, 0, 0, 0.8);
+}
+.ligtbox-modal .content-container .prev:active,
+.ligtbox-modal .content-container .next:active {
+  	background-color: #000;
+}
+
+/* Number text (1/3 etc) */
+.ligtbox-modal .content-container .number-text {
+	color: #777;
+    font-size: 18px;
+    padding: 8px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+}
+
+.ligtbox-modal .content-container .caption-container {
+	text-align: center; 
+	color: white;
+	position: absolute;
+	width: 100%;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.ligtbox-modal .content-container .caption-container .caption {
+	line-height: 40px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.5);
+    margin:0px;
+}
+
+.ligtbox-modal-backdrop {
+	display: none;
+	position: fixed; 
+	padding-top: 15vh;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.9);
+	z-index: 9997; 
+}
+
+/* The Close Button */
+.ligtbox-modal-backdrop .close {
+	color: #999;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 50px;
+	font-weight: 200;
+	opacity: 1;
+}
+
+.ligtbox-modal-backdrop .close:hover,
+.ligtbox-modal-backdrop .close:focus {
+	color: #eee;
+	text-decoration: none;
+	cursor: pointer;
+}
+

@@ -1,0 +1,63 @@
+ 
+$header_border_color: rgba(255,255,255,0.2);
+
+
+// Header Top 
+// >>>----------------------------------------------------------)>
+$header_top_bgcolor: $primary_color;
+$header_top_textcolor: #fff;
+ 
+$header_top_link_textcolor: #fff;
+$header_top_link_textcolor_hover: #fff;
+ 
+ 
+
+// Header Widget Calendar
+// >>>----------------------------------------------------------)>
+$header_widget_calendar_caption_textcolor : #fff;
+$header_widget_calendar_border_color : #fff; 
+$header_widget_calendar_active_date_bgcolor : #fff;
+$header_widget_calendar_active_date_textcolor : $primary_color;
+$header_widget_calendar_th_textcolor: #fff;
+$header_widget_calendar_td_textcolor: #fff;
+
+
+
+// Header Widget Title
+// >>>----------------------------------------------------------)>
+$header_widget_title_textcolor: #fff;
+
+
+
+// Header Widget Form Input Border
+// >>>----------------------------------------------------------)>
+$header_widget_form_input_border_color: #fff;
+
+
+
+// Header Widget Menu
+// >>>----------------------------------------------------------)>
+$header_widget_menu_border_color: $header_border_color;
+$header_widget_menu_link_textcolor: rgba(255,255,255,0.7);
+$header_widget_menu_link_textcolor_hover: #fff;
+ 
+
+
+// Header Search Form
+// -----------------------
+$header_search_form_input_border_color: #fff; 
+
+$header_search_form_button_textcolor: #fff;
+$header_search_form_button_bgcolor: #1a1a1a;
+$header_search_form_button_border_color: #1a1a1a;
+
+$header_search_form_button_textcolor_hover: #fff; 
+$header_search_form_button_bgcolor_hover: #1a1a1a;
+$header_search_form_button_border_color_hover: #1a1a1a;
+
+
+
+// Site Logo
+// ------------ 
+$header_site_name_textcolor: #000;
+$header_site_name_textcolor_hover: #525252;

@@ -1,0 +1,520 @@
+// >>>----------------------------->>> CONTENT AREA STYLES <<<-----------------------------<<< 
+
+
+
+// Bottom space for the content area
+// --------------------------------------
+.content-area {
+    min-height: 70vh; 
+    overflow: visible; // just make this visible so that the background fluid will have a 100% screen width
+    margin-bottom: 0px; 
+    padding-top: 0px; 
+    //float: left; I commented this float rule, because the content text in the small devices does not wrap.
+
+    ul { 
+	    list-style-type: disc; 
+	}
+} 
+ 
+@media only screen and (min-width : 320px), (max-width: 320px){  
+    .content-area {
+        //border-bottom:1px solid $common_border_color;
+        margin-bottom:20px; 
+    } 
+}
+
+@media only screen and (min-width : 768px) { 
+	 
+}
+ 
+@media only screen and (min-width : 992px) {
+    .content-area {
+        border-bottom:none;
+        margin-bottom:20px; 
+    } 
+}
+
+ 
+.archive,
+.blog,
+.single,
+.search {
+	.content-area {
+		margin-top: 25px !important;
+	}
+}
+
+
+// Date Posted
+// ---------------- 
+.rmd-posted-date-container {
+    text-align: center;
+    margin-top: 7px;
+
+    .panel-default {
+	    border: none;
+	    margin-bottom: 0px;
+	    background-color: transparent;
+	    border: 1px solid transparent; 
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    display: inline-block;
+
+	    > .panel-heading { 
+		    background-color: $posted_date_day_bgcolor; 
+		    border-top: 1px solid $posted_date_day_border_color; 
+		    border-left: 1px solid $posted_date_day_border_color; 
+		    border-right: 1px solid $posted_date_day_border_color; 
+		    border-bottom: 1px solid $posted_date_day_border_color;   
+		    font-size: 1.7em;
+		    padding: 3px 3px 0px; 
+		    color: $posted_date_day_color;
+		    border-radius: 0px 0px 0px;
+		    line-height: 37px;
+		}
+		> .panel-body {
+		    background-color: $posted_date_month_bgcolor;
+		    color: $posted_date_month_color;
+		    padding: 3px 5px;
+		    border-radius: 0px;
+		    font-size: 14px;
+		    line-height: 22px;
+		    border-radius: 0px 0px 0px;
+		} 
+		> .panel-footer { 
+		    background-color: $posted_date_year_bgcolor;
+		    border: none;
+		    padding: 5px;
+		    color: $posted_date_year_color;
+		}
+
+	}
+
+} 
+
+
+
+// Comment List and Form 
+// ------------------------ 
+.comments-area {
+ 	
+ 	article {
+ 		margin-bottom:0px;
+ 	}
+
+	.comment-respond {
+	    background-color: $comment_form_bgcolor;
+	    padding: 10px 22px 15px;
+	    margin-bottom:40px;
+
+	    .comment-reply-title {
+	    	margin:0px;
+	    }
+	} 
+
+	.comment-list {
+		padding:0px;
+		padding-top:10px;
+		background-color: transparent; 
+		margin-bottom:40px;
+
+		.comment {
+
+			border-bottom: 1px solid $comment_list_border_color;
+			margin-bottom:30px;
+
+			.comment-respond {
+				margin-left:65px;
+			}
+
+		 	.comment-body {
+		 		position: relative;
+
+		 		.comment-meta {
+		 			.comment-author {
+		 				.avatar {
+		 					width:50px;
+		 					height: auto;
+		 				}
+		 				.fn {
+		 					margin-left: 10px;
+						    font-size: 20px;
+						    font-weight: 500;
+						    top: -10px;
+						    position: relative;
+						    padding-bottom: 25px;
+    						display: inline-block;
+		 				}
+		 				.says {
+		 					display:none;
+		 				}
+		 			}
+		 			.comment-metadata {
+	 				    margin-left: 65px;
+					    position: relative;
+					    font-size: 14px;
+					    top: -35px;
+		 			}
+		 			.comment-awaiting-moderation {
+		 				margin-left: 65px;
+					    position: relative;
+					    top: -20px;
+					    font-style:italic;
+					    font-size: 14px;
+		 			}
+		 		}
+		 		.comment-content {
+		 			margin-left: 65px;
+				    position: relative;
+				    top: -25px;
+		 		}
+		 		.reply {
+		 			width: 100%;
+				    background: transparent;
+				    padding: 0px;
+				    margin-left:65px;
+				    position: relative;
+				    top: -25px;
+		 		}
+		 	}
+		}
+
+		.children  {
+			padding-left:60px;
+			.comment {
+				background-color: transparent;
+				border-top:1px solid $comment_list_border_color;
+				padding-top:30px; 
+				border-bottom: none;
+				margin-bottom:0px;
+			}
+		}
+	}
+
+	.comment-form {
+	    p {
+		    margin-top: 10px;
+		}
+		.form-submit {
+		    margin-top: 15px;
+		}
+		input[type="submit"] {
+		    background-color: $comment_form_button_bgcolor !important; 
+		    margin:1px 1px !important;  
+		    color: $comment_form_button_textcolor !important;
+		    border:none !important;
+		    display: inline-block !important;  
+		    text-align: center;
+		    padding:8px 20px !important; 
+		    font-size: 14px; 
+
+		    &:hover,
+			&:focus,
+			&:active {
+			    background-color: $comment_form_button_bgcolor_hover !important; 
+			    border:none;
+			    text-decoration: none;
+			    box-shadow: none;
+			    color: $comment_form_button_textcolor_hover !important;
+			} 
+		} 
+
+	}
+
+}
+
+
+
+// Post Pagination 
+// ------------------ 
+.navigation.pagination {
+	display: block;
+
+	.nav-links {
+	    margin-bottom: 30px;
+
+	    .page-numbers {
+		    background-color: $post_pagination_bgcolor;
+		    min-width:20px;
+		    padding:5px 15px;
+		    display: inline-block;
+		    text-align: center;
+		    border-radius: 0px;
+		    color: $post_pagination_textcolor;
+		    border:1px solid $post_pagination_border_color;
+
+		    &.current,
+			&:hover,
+			&:focus {
+			    background-color: $post_pagination_bgcolor_hover;
+			    border-color: $post_pagination_border_color_hover;
+			    color: $post_pagination_textcolor_hover;
+			}
+
+		}
+
+	} 
+}
+
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+    
+    .navigation.pagination {   
+	    text-align: center;
+    }
+}
+ 
+@media only screen and (min-width : 768px) { 
+    .navigation.pagination {   
+	    text-align: left;
+    }
+}
+
+
+
+// Post Navigation  
+// ------------------ 
+.post-navigation-container { 
+ 	
+ 	border-top: 1px solid $post_navigation_border_color;
+ 	border-bottom: 1px solid $post_navigation_border_color;
+ 	padding:10px 0px;
+ 	overflow:hidden; 
+ 	display: flex;
+ 	align-items: center;
+  	justify-content: center;
+  	margin:50px 0px;
+
+ 	.navigation {
+ 		background-color: transparent;
+ 		display: inline-block;
+ 		float:left;
+ 		width:50%; 
+
+ 		a {
+ 			position:relative; 
+ 			font-size:20px;
+ 			overflow: hidden;
+		    background: transparent;
+		    display: flex;
+		 	align-items: center;
+		  	justify-content: center;
+		  	color: $post_navigation_color;
+
+		  	&:hover,
+		  	&:focus {
+		  		color: $post_navigation_color_hover;
+		  	}
+
+ 			.title {
+ 				background-color: transparent;
+ 				display:inline-block; 
+ 				text-align: center;
+ 				width:95%; 
+ 				padding:0px 20px;
+ 			} 
+
+ 		}
+
+ 	}
+ 	.navigation.previous a {
+ 		border-right: 1px solid $post_navigation_border_color; 
+ 	}
+ 	.navigation.next a {  
+
+ 	}
+	 
+} 
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+    
+    .post-navigation-container {   
+
+    	display: block; 
+		border-top: none;
+ 		border-bottom: none;
+
+	 	.navigation {  
+	 		width:100%; 
+	 		display:block;
+
+	 		&.previous a {
+		 		border-right: none; 
+		 		border-top: 1px solid $post_navigation_border_color; 
+		 		border-bottom: 1px solid $post_navigation_border_color;  
+		 		padding: 20px 0px 20px;
+
+		 		.title {  
+	 				text-align: left; 
+	 				padding:0px 0px 0px 20px;
+	 			} 
+		 	} 
+
+		 	&.next a { 
+		 		margin-top: -1px;
+		 		padding: 20px 0px 20px;
+		 		border-top: 1px solid $post_navigation_border_color; 
+		 		border-bottom: 1px solid $post_navigation_border_color; 
+
+		 		.title {  
+	 				text-align: right; 
+	 				padding:0px 20px 0px 0px;
+	 			}
+		 	} 
+	 	} 
+ 	}
+}
+ 
+@media only screen and (min-width : 768px) { 
+
+    .post-navigation-container {   
+ 		
+		border-top: 1px solid $post_navigation_border_color;
+ 		border-bottom: 1px solid $post_navigation_border_color;
+
+	 	display: flex;
+	 	align-items: center;
+	  	justify-content: center; 
+
+	 	.navigation {  
+	 		display: inline-block;
+	 		width:50%; 
+
+	 		&.previous a {
+	 			border-bottom: none; 
+	 			border-top: none;
+		 		border-right: 1px solid $post_navigation_border_color; 
+		 		padding: 10px 0px;
+		 	}
+
+		 	&.next a { 
+		 		padding: 10px 0px;
+		 		border-bottom: none;
+		 		border-top: none;
+		 	}
+
+		 	&.previous a,
+		 	&.next a {
+		 		.title {  
+	 				text-align: center; 
+	 				padding:0px 20px;
+	 			} 
+		 	}
+	 	} 
+
+ 	}
+
+}
+
+
+
+
+// Post Thumbnail  
+// -----------------
+.post-thumbnail img {
+    border: 4px solid $post_thumbnail_border_color;
+    border-radius: 4px; 
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+
+
+// Page Title
+// --------------
+.page-title,
+.entry-title {
+	color: $page_title_textcolor;
+	line-height: 47px; 
+}
+
+
+// Page Entry Title
+// --------------------
+.entry-header {
+	.entry-header-background {
+		background-color: $entry_header_bgcolor;
+	}
+
+	h1.page-title,
+	h1.entry-title {
+		position: relative;
+	    z-index: 1;
+	    color: $page_title_textcolor !important;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	    padding: 20px 0px 20px;
+	    font-size: 1.6em; 
+	}
+
+	.taxonomy-description {
+		position: relative;
+		z-index: 1;
+		color: $page_title_textcolor !important;
+		font-style: italic;
+		margin-top: -20px;
+		padding-bottom: 20px;
+	}
+}
+
+
+
+// Entry Title (within the blog list)
+// -------------------------------------
+article { 
+
+	.rmd-content-page-container {
+
+		margin-bottom:20px;
+ 
+		.entry-title {
+			margin-top: 0px;
+		    padding-top: 5px; 
+		    margin-bottom: 0px;
+		    
+		    a {
+		    	color: $entry_title_textcolor;
+
+		    	&:hover,
+		    	&:focus,
+		    	&:active {
+			    	 color: $entry_title_textcolor_hover;
+		    	}
+		    } 
+		}
+	} 
+}
+
+.hide-title {
+	.main-entry-header {
+	    position: absolute;
+	    top: -100vh;
+	    left: -100vw;
+	}
+}
+
+
+@media only screen and (min-width : 320px), (max-width: 320px){  
+    article {  
+		.rmd-content-page-container {  
+			.entry-title { 
+				font-size: 26px;
+				line-height: 36px; 
+			}
+		} 
+	}
+} 
+ 
+@media only screen and (min-width : 992px) {
+
+    article {  
+		.rmd-content-page-container {  
+			.entry-title { 
+				font-size: 30px;
+				line-height: 40px; 
+			}
+		} 
+	}
+}
+
+
