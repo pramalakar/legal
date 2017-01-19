@@ -8,16 +8,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 class RMD_Filter_Facade
 {      
 
-	public function create_menu_header_ads_filter()
+	public function create_menu_contacts_filter()
 	{  
-		add_filter('rmd_sidebar_ads', array($this, '_create_sidebar_ads_filter'));
+		add_filter('rmd_menu_contacts', array($this, '_create_menu_contacts_filter'));
+
 	}
   	
 
-  	public function _create_sidebar_ads_filter($content)
+  	public function _create_menu_contacts_filter($content)
   	{	  
+        $rmd_setting_contact_navbar_menu_status = get_option('rmd_setting_contact_navbar_menu_status');
 
-    }
+        if(empty($rmd_setting_contact_navbar_menu_status) || $rmd_setting_contact_navbar_menu_status == 'no') return $content;
+        
+        ob_start(); 
+        include(dirname(__FILE__).'/templates/template_filter.php'); 
+        $new_content = ob_get_clean(); 
+
+        if(!empty($new_content)) return $new_content;
+
+        return $content;		
+  	}
+  	
+
 }  
   
 

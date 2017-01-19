@@ -29,7 +29,6 @@
 				echo do_shortcode('[rmd_column_manager_page_children parent_id="'.$id.'"]'); 
 			} 
 
-
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rmd-theme' ),
 				'after'  => '</div>',

@@ -87,6 +87,7 @@ global $floated_class;
 		</div>
 	</div>
 	<?php endif; ?>
+
     <!-- Static navbar -->
     <nav class="navbar navbar-default">
 	    <div class="container">
@@ -100,6 +101,9 @@ global $floated_class;
 		        	<?php echo apply_filters('rmd_site_logo', ''); ?>   
 				</div>  
 		    </div> 
+		    <div class="site-logo-container fr">
+		    	<img src="http://placehold.it/340x80">
+		    </div>
 		    <!-- <div id="navbar" class="navbar-collapse collapse">
 		    	<div class="nav navbar-nav navbar-right main-menu">Replace below menu with ads </div>
 		    </div> -->
@@ -163,4 +167,11 @@ global $floated_class;
         );
     ?>   
 </nav>
+<div class="breadcrumbs bg-darkgray text-white">
+	<h6 class="container entry-title no-padding"><?php if(function_exists('bcn_display'))
+	{
+		bcn_display();
+	}?>
+	</h6>
+</div>
 

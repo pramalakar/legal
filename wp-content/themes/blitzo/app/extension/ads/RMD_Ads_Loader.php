@@ -1,5 +1,5 @@
 <?php    
-namespace theme\rmd\extension\ads;
+namespace theme\rmd\extension\contacts;
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
@@ -15,7 +15,7 @@ class RMD_Ads_Loader
 
     public function load_assets()
     {  
-        // require_once(dirname(__FILE__).'/assets/RMD_Assets_Handler.php');  
+        require_once(dirname(__FILE__).'/assets/RMD_Assets_Handler.php');  
     } 
 
     public function load_app()

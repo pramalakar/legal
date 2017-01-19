@@ -2,11 +2,17 @@
 
 
 body, h1, h2, h3, h4, h5, h6, a{
-	font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 .wp-posts-pro h3{
-	font-weight: 900 !important;
+  font-weight: 900 !important;
 }
+
+#navbar{
+  background-color: #000 !important;
+}
+
+
 .fr{
   float: right !important;
 }
@@ -20,15 +26,10 @@ body, h1, h2, h3, h4, h5, h6, a{
 }
 
 
-/*SOCIAL MEDIA*/
-.socialmedia .fa-facebook{
-  display: block;
-  width: 18px;
-  height: 18px;
-  background-color: #fff;
+/*Slider*/
+.rmd-slider-wrapper{
+  margin-bottom: 0 !important;
 }
-
-
 
 /*POST*/
 .thumbnail-large{
@@ -36,7 +37,6 @@ body, h1, h2, h3, h4, h5, h6, a{
   width: 100%;
   height: 100px;
 }
-
 
 /*CONTENT MANAGER (PAGE CONTENT CREATED BY CONTENT MANAGER FROM ADMIN MENU)*/
 .content-area{
@@ -69,9 +69,6 @@ input, select, textarea{
 
 
 /*HEADER*/
-#navbar{
-  background-color: #011821 !important
-}
 header.header-wrapper .header-inner-top-wrapper .header-top-right-container {
   float: right !important;
 }
@@ -110,19 +107,31 @@ footer.footer-wrapper .widget ul > li, footer.footer-wrapper .widget ul.menu > l
   border: none;
 }
 footer.footer-wrapper .footer-inner-copyright-wrapper{
-	padding: 0 !important;
-	background-color: #011B23 !important;
-	border: none !important;
+  padding: 0 !important;
+  background-color: #011B23 !important;
+  border: none !important;
+}
+footer.footer-wrapper .widget ul li a{
+  padding: 2px 0 !important;
 }
 p.powered-by a{
-	color: #fff !important;
+  color: #fff !important;
 }
 p.powered-by a:hover{
-	color: #777 !important;
+  color: #777 !important;
 }
 
 
+/*MOST VIEWED TODAY - PLUGIN USED widget_on_page*/
+.widgets_on_page ul{
+  padding: 0 !important;
+}
 
+
+/*Newsletter Subscription*/
+.tnp-field label{
+  display: none !important;
+}
 
 /*GENERAL*/
 /*Vertically middle of div*/
@@ -165,6 +174,9 @@ background-color:#60CFF2!important;
 
 .bg-lightgray{
   background-color: #eee !important;
+}
+.bg-darkgray{
+  background-color: #272727 !important;
 }
 
 .text-white{
@@ -349,125 +361,35 @@ padding-right:0px !important;
 
 
 
-.margin-top-0{
-margin-top:0px !important;
-}
-.margin-top-10{
-  margin-top:10px !important;
-}
-.margin-top-20{
-  margin-top:20px !important;
-}
-.margin-top-30{
-  margin-top:30px !important;
-}
-.margin-top-40{
-  margin-top:40px !important;
-}
-.margin-top-50{
-  margin-top:50px !important;
-}
-.margin-top-60{
-  margin-top:60px !important;
-}
-.margin-top-70{
-  margin-top:70px !important;
-}
-.margin-top-80{
-  margin-top:80px !important;
-}
-.margin-bottom-0{
-margin-bottom:0px !important;
-}
-.margin-bottom-10{
-  margin-bottom:10px !important;
-}
-.margin-bottom-20{
-  margin-bottom:20px !important;
-}
-.margin-bottom-30{
-  margin-bottom:30px !important;
-}
-.margin-bottom-40{
-  margin-bottom:40px !important;
-}
-.margin-bottom-50{
-  margin-bottom:50px !important;
-}
-.margin-bottom-60{
-  margin-bottom:60px !important;
-}
-.margin-bottom-70{
-  margin-bottom:70px !important;
-}
-.margin-bottom-80{
-  margin-bottom:80px !important;
-}
-.margin-left-0{
-margin-left:0px !important;
-}
-.margin-left-10{
-  margin-left:10px !important;
-}
-.margin-left-20{
-  margin-left:20px !important;
-}
-.margin-left-30{
-  margin-left:30px !important;
-}
-.margin-left-40{
-  margin-left:40px !important;
-}
-.margin-left-50{
-  margin-left:50px !important;
-}
-.margin-left-60{
-  margin-left:60px !important;
-}
-.margin-left-70{
-  margin-left:70px !important;
-}
-.margin-left-80{
-  margin-left:80px !important;
-}
-.margin-right-0{
-margin-right:0px !important;
-}
-.margin-right-10{
-  margin-right:10px !important;
-}
-.margin-right-20{
-  margin-right:20px !important;
-}
-.margin-right-30{
-  margin-right:30px !important;
-}
-.margin-right-40{
-  margin-right:40px !important;
-}
-.margin-right-50{
-  margin-right:50px !important;
-}
-.margin-right-60{
-  margin-right:60px !important;
-}
-.margin-right-70{
-  margin-right:70px !important;
-}
-.margin-right-80{
-  margin-right:80px !important;
-}
-/*
-Theme Name: Blitzo - Education
-Theme URI: http://blitzo.com.au/
-Author: Raymond M. Daylo
-Author URI: http://blitzo.com.au/
-Description: The awesome theme
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: blitzo
-Tags:
+.margin-top-0{ margin-top:0px !important; } .margin-top-10{   margin-top:10px
+!important; } .margin-top-20{   margin-top:20px !important; } .margin-top-30{
+margin-top:30px !important; } .margin-top-40{   margin-top:40px !important; }
+.margin-top-50{   margin-top:50px !important; } .margin-top-60{   margin-
+top:60px !important; } .margin-top-70{   margin-top:70px !important; }
+.margin-top-80{   margin-top:80px !important; } .margin-bottom-0{ margin-
+bottom:0px !important; } .margin-bottom-10{   margin-bottom:10px !important; }
+.margin-bottom-20{   margin-bottom:20px !important; } .margin-bottom-30{
+margin-bottom:30px !important; } .margin-bottom-40{   margin-bottom:40px
+!important; } .margin-bottom-50{   margin-bottom:50px !important; } .margin-
+bottom-60{   margin-bottom:60px !important; } .margin-bottom-70{   margin-
+bottom:70px !important; } .margin-bottom-80{   margin-bottom:80px !important;
+} .margin-left-0{ margin-left:0px !important; } .margin-left-10{   margin-
+left:10px !important; } .margin-left-20{   margin-left:20px !important; }
+.margin-left-30{   margin-left:30px !important; } .margin-left-40{   margin-
+left:40px !important; } .margin-left-50{   margin-left:50px !important; }
+.margin-left-60{   margin-left:60px !important; } .margin-left-70{   margin-
+left:70px !important; } .margin-left-80{   margin-left:80px !important; }
+.margin-right-0{ margin-right:0px !important; } .margin-right-10{   margin-
+right:10px !important; } .margin-right-20{   margin-right:20px !important; }
+.margin-right-30{   margin-right:30px !important; } .margin-right-40{
+margin-right:40px !important; } .margin-right-50{   margin-right:50px
+!important; } .margin-right-60{   margin-right:60px !important; } .margin-
+right-70{   margin-right:70px !important; } .margin-right-80{   margin-
+right:80px !important; } /* Theme Name: Blitzo - Education Theme URI:
+http://blitzo.com.au/ Author: Raymond M. Daylo Author URI:
+http://blitzo.com.au/ Description: The awesome theme Version: 1.0.0 License:
+GNU General Public License v2 or later License URI:
+http://www.gnu.org/licenses/gpl-2.0.html Text Domain: blitzo Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 

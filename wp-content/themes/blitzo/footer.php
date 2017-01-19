@@ -119,7 +119,7 @@
 			<div class="footer-copyright-container">
 				<div class="row"> 
 					<div class="col-md-6 text-left" >
-						<?php echo '<p class="copyright">'.apply_filters('rmd_site_copyright', '&copy;  '.get_bloginfo('name').'. All rights reserved. ').' Legal Practice Intelligence | www.legalpracticeintelligence.com.au</p>'; ?>  
+						<?php echo '<p class="copyright">'.apply_filters('rmd_site_copyright', '&copy;  '.get_bloginfo('name').'. All rights reserved. ').'</p>'; ?>  
 					</div>
 					<div class="col-md-6 text-right" >
 						<?php echo apply_filters('rmd_site_powered_by', ''); ?>  

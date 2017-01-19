@@ -9,9 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class RMD_App_Handler
 {    
-    protected $shortcode_header_ads = 'rmd_header_ads';
-    protected $shortcode_sidebar_ads = 'rmd_sidebar_ads';
-    
+    protected $shortcode_phone_1 = 'rmd_contact_phone_1';
+    protected $shortcode_phone_2 = 'rmd_contact_phone_2';
+    protected $shortcode_email_1 = 'rmd_contact_email_1';
+    protected $shortcode_email_2 = 'rmd_contact_email_2';
+    protected $shortcode_address = 'rmd_contact_address';
+
 
     public function __construct()
     {    
@@ -25,29 +28,37 @@ class RMD_App_Handler
     { 
         $app = RMD_Facade_Loader::load_facade('Shortcode'); 
 
-        $app->create_header_ads_shortcode($this->shortcode_header_ads);
-        $app->create_sidebar_ads_shortcode($this->shortcode_sidebar_ads);
-      
+        $app->create_contact_phone_1_shortcode($this->shortcode_phone_1);
+        $app->create_contact_phone_2_shortcode($this->shortcode_phone_2);
+        $app->create_contact_email_1_shortcode($this->shortcode_email_1);
+        $app->create_contact_email_2_shortcode($this->shortcode_email_2); 
+        $app->create_contact_address_shortcode($this->shortcode_address);  
     }
  
 
     public function create_fitler()
     { 
         $app = RMD_Facade_Loader::load_facade('Filter'); 
-        // $app->create_menu_header_ads_filter();
+        $app->create_menu_contacts_filter();
     }
 
 
 
     public function create_setting()
     { 
-        $shortcode_header_ads = $this->shortcode_header_ads;
-        $shortcode_sidebar_ads = $this->shortcode_sidebar_ads;
-       
+        $shortcode_phone_1 = $this->shortcode_phone_1;
+        $shortcode_phone_2 = $this->shortcode_phone_2;
+        $shortcode_email_1 = $this->shortcode_email_1;
+        $shortcode_email_2 = $this->shortcode_email_2;
+        $shortcode_address = $this->shortcode_address;
+
         $app = RMD_Facade_Loader::load_facade('Setting'); 
         $app->create_ads_setting(compact(
-            'shortcode_header_ads',
-            'shortcode_sidebar_ads'
+            'shortcode_phone_1',
+            'shortcode_phone_2',
+            'shortcode_email_1', 
+            'shortcode_email_2', 
+            'shortcode_address'
             ));
 
     }

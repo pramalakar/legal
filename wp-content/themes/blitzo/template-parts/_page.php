@@ -19,25 +19,8 @@ $content_responsive_class = ($layout == 'full_width')? 'col-md-12' : 'col-md-9';
 ?> 
 <div class="container <?php echo $hide_title_class; ?>" >
 	<div class="row">  
-		<div class="col-md-12" > 
-			<header class="main-entry-header entry-header">
-				<div class="rmd-background-fluid entry-header-background" ></div> 
-				<div class="row" >
-					<div class="col-md-12" >
-						<!-- <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> REPLACED WITH BELOW FOR BREADCRUMBS NAVXT PLUGIN-->
-						<div class="breadcrumbs">
-							<h1 class="entry-title"><?php if(function_exists('bcn_display'))
-							{
-								bcn_display();
-							}?>
-							</h1>
-						</div>
-					</div> 
-				</div>
-			</header><!-- .entry-header --> 
-		</div>
 		<?php if($layout == 'sidebar_left'): ?>
-		<div class="col-md-3" >
+		<div class="col-md-3 margin-top-30" >
 			<div class="sidebar-container page-sidebar" >
 				<?php get_sidebar(); ?>
 			</div>
@@ -63,17 +46,14 @@ $content_responsive_class = ($layout == 'full_width')? 'col-md-12' : 'col-md-9';
 			</div>
 		</div>
 		<?php endif; ?> 
-		
 
-
-
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-md-12" >
 				<div class="sidebar-container page-sidebar" >
 					<?php get_sidebar(); ?>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		
 
 
