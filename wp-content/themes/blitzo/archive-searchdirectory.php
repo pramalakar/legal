@@ -9,6 +9,9 @@ Template Name: Directory Service Search
  */
 
 get_header(); ?>
+
+
+
 <div style="background:url('http://localhost:8888/legal/wp-content/uploads/2017/01/AdobeStock_96445943_WM.jpeg') center center no-repeat; background-size: cover;">
 	<div class="container padding-top-160 padding-bottom-80">
 		<div class="row">
@@ -72,6 +75,55 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+
+<!-- Search Result -->
+<div class="container searchList">
+		<div class="col-md-12 padding-top-30 padding-bottom-30">
+			<div class="col-md-3">
+				<img src="http://localhost:8888/legal/wp-content/uploads/2017/01/c25291a5-41ad-3250-b66f-6a4644f1af6e.jpg">
+			</div>
+			<div class="col-md-9">
+				<div class="col-md-12 title">
+					<div class="col-md-8">
+						<h3>Cascade Consulting</h3>
+					</div>
+					<div class="col-md-4">
+						<h4><i class="fa fa-map-marker" aria-hidden="true"></i>Location NSW</h4>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<p><i class="fa fa-phone" aria-hidden="true"></i>  0409 999 2317</p>
+					<p><i class="fa fa-envelope" aria-hidden="true"></i>  cascade@cascadeconsulting.com.au </p>
+					<p><i class="fa fa-internet-explorer" aria-hidden="true"></i>  www.cascadeconsulting.com.au</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 padding-top-30 padding-bottom-30">
+			<div class="col-md-3">
+				<img src="http://localhost:8888/legal/wp-content/uploads/2017/01/c25291a5-41ad-3250-b66f-6a4644f1af6e.jpg">
+			</div>
+			<div class="col-md-9">
+				<div class="col-md-12 title">
+					<div class="col-md-8">
+						<h3>Cascade Consulting</h3>
+					</div>
+					<div class="col-md-4">
+						<h4><i class="fa fa-map-marker" aria-hidden="true"></i>Location NSW</h4>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<p><i class="fa fa-phone" aria-hidden="true"></i>  0409 999 2317</p>
+					<p><i class="fa fa-envelope" aria-hidden="true"></i>  cascade@cascadeconsulting.com.au </p>
+					<p><i class="fa fa-internet-explorer" aria-hidden="true"></i>  www.cascadeconsulting.com.au</p>
+				</div>
+			</div>
+		</div>
+</div>
+
+
+
+
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-12" > 
