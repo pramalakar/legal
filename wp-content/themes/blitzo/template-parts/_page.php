@@ -47,13 +47,13 @@ $content_responsive_class = ($layout == 'full_width')? 'col-md-12' : 'col-md-9';
 		</div>
 		<?php endif; ?> 
 
-		<!-- <div class="row">
+		<div class="row">
 			<div class="col-md-12" >
 				<div class="sidebar-container page-sidebar" >
 					<?php get_sidebar(); ?>
 				</div>
 			</div>
-		</div> -->
+		</div>
 		
 
 

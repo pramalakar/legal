@@ -7,7 +7,6 @@
  * @package Blitzo
  */
 
-
 /**
  * Custom template tags for this theme.
  */
@@ -34,3 +33,4 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/app/RMD_App_Loader.php';
 
  
+
