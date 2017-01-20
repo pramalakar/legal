@@ -55,6 +55,58 @@ body, h1, h2, h3, h4, h5, h6, a{
   height: 45px !important;
 }
 
+label.filter > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label.filter > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label.filter > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+
+
+
+
+
+
+/*Login Form */
+#member-login{
+  width: 320px !important;
+  float: none !important;
+  margin: 30px auto !important;
+  background-color: #dfdfdf !important;
+  padding: 50px !important;
+}
+#member-login .swpm-login-form-submit{
+    transition: all 0.5s !important;
+    color: #fff !important;
+    background-color: #272727 !important;
+    border-color: #272727 !important;
+    width: 100% !important;
+}
+#member-login .swpm-label, .swpm-password-label{
+  display: none !important;
+}
+#member-login .swpm-remember-checkbox input[type="checkbox"]{
+    height: 14px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+/*Join Us*/
+.swpm-payment-button{
+  margin: 30px auto !important;
+}
+.stripe-button-el{
+  transition: all 0.5s !important;
+    color: #fff !important;
+    background-color: #272727 !important;
+    border-color: #272727 !important;
+}
+
 /*CONTACT FORM*/
 input, select{
   height: 45px !important;
@@ -277,6 +329,9 @@ padding-top:0px !important;
 .padding-top-80{
   padding-top:80px !important;
 }
+.padding-top-160{  
+   padding-top:160px !important; 
+ }
 .padding-bottom-0{
 padding-bottom:0px !important;
 }

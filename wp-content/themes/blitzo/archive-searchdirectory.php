@@ -9,8 +9,70 @@ Template Name: Directory Service Search
  */
 
 get_header(); ?>
-
-<div class="container" >
+<div style="background:url('http://localhost:8888/legal/wp-content/uploads/2017/01/AdobeStock_96445943_WM.jpeg') center center no-repeat; background-size: cover;">
+	<div class="container padding-top-160 padding-bottom-80">
+		<div class="row">
+			<div class="col-md-7">
+				<input type="text" name="searchText" placeholder="Keyword, Business Name, Product or Service">
+			</div>
+			<div class="col-md-3">
+				<select>
+					<option selected value="NSW">NSW</option>
+					<option value="NT">NT</option>
+					<option value="ACT">ACT</option>
+					<option value="WA">WA</option>
+					<option value="SA">SA</option>
+					<option value="QLD">QLD</option>
+					<option value="TAS">TAS</option>
+					<option value="VIC">VIC</option>
+				</select>
+			</div>
+			<div class="col-md-2">
+				<input type="button" class="button" name="search" value="Search">
+			</div>
+		</div>
+		<div class="row tablewrap margin-top-50">
+			<label class="filter tablecell">
+			  <input type="radio" name="fb" value="accountants" />
+			  <img src="http://localhost:8888/legal/wp-content/uploads/2017/01/Asset-113x.png" width="80">
+			</label>
+			<label class="filter tablecell">
+			  <input type="radio" name="fb" value="court agents" />
+			  <img src="http://localhost:8888/legal/wp-content/uploads/2017/01/Asset-103x.png" width="80">
+			</label>
+			<label class="filter tablecell">
+			  <input type="radio" name="fb" value="court agents" />
+			  <img src="http://localhost:8888/legal/wp-content/uploads/2017/01/Asset-93x-1.png" width="80">
+			</label>
+			<label class="filter tablecell">
+			  <input type="radio" name="fb" value="employment" />
+			  <img src="http://localhost:8888/legal/wp-content/uploads/2017/01/Asset-83x-1.png" width="80">
+			</label>
+			<label class="filter tablecell">
+			  <input type="radio" name="fb" value="funder & finance" />
+			  <img src="http://localhost:8888/legal/wp-content/uploads/2017/01/Asset-73x-1.png" width="80">
+			</label>
+			<label class="filter tablecell">
+			  <input type="radio" name="fb" value="business consultants" />
+			  <img src="http://localhost:8888/legal/wp-content/uploads/2017/01/Asset-63x-1.png" width="80">
+			</label>
+			<label class="filter tablecell">
+			  <input type="radio" name="fb" value="it networking consultants" />
+			  <img src="http://localhost:8888/legal/wp-content/uploads/2017/01/Asset-53x-1.png" width="80">
+			</label>
+			<label class="filter tablecell">
+			  <input type="radio" name="fb" value="office equipment & services" />
+			  <img src="http://localhost:8888/legal/wp-content/uploads/2017/01/Asset-43x-1.png" width="80">
+			</label>
+			<label class="filter tablecell">
+			  <input type="radio" name="fb" value="property services" />
+			  <img src="http://localhost:8888/legal/wp-content/uploads/2017/01/Asset-33x-1.png" width="80">
+			</label>
+			
+		</div>
+	</div>
+</div>
+<div class="container">
 	<div class="row">
 		<div class="col-md-12" > 
 			<header class="main-entry-header entry-header">
@@ -33,7 +95,14 @@ get_header(); ?>
 		<div class="col-md-9">   
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main">
-				 
+				<div>
+					
+					
+				</div>
+
+
+
+
 				<?php
 				if ( have_posts() ) : ?> 
 
