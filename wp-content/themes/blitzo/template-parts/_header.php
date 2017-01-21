@@ -101,10 +101,11 @@ global $floated_class;
 		        	<?php echo apply_filters('rmd_site_logo', ''); ?>   
 				</div>  
 		    </div> 
-		    <div class="site-logo-container fr">
-		    	<img src="http://placehold.it/340x80">
+		    <div class="site-logo-container lg-fr md-fr">
+		    	<?php the_ad(461); ?>
+		    	<!--<img src="http://placehold.it/340x80">-->
 		    </div>
-		    <!-- <div id="navbar" class="navbar-collapse collapse">
+	<!-- 	    <div id="navbar" class="navbar-collapse collapse">
 		    	<div class="nav navbar-nav navbar-right main-menu">Replace below menu with ads </div>
 		    </div> -->
 	      	<!-- <div id="navbar" class="navbar-collapse collapse">  
@@ -122,7 +123,7 @@ global $floated_class;
 		  	</div> --><!--/.nav-collapse -->  
 	    </div><!--/.container-fluid -->  
 	</nav> 
-	<nav id="navbar-main" class="navbar navbar-default container-fluid <?php echo $floated_class; ?>" >
+	<nav id="navbar-main" class="navbar navbar-default container-fluid <?php echo $floated_class; ?> hidden-xs hidden-sm" >
 		<div id="navbar" class="navbar-collapse collapse">  
 			<div class="tablewrap">
 				<div class="tablecell valignmiddle col-md-10 col-sm-12">
@@ -147,7 +148,7 @@ global $floated_class;
 		    		<?php echo date('l jS F Y'); ?>  
 		    	</div> 
 		    </div>
-	  	</div><!--/.nav-collapse -->  
+	  	</div>
   	</nav>
 </header>
 <nav id="side-navmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas side-navmenu" role="navigation">  
@@ -168,7 +169,7 @@ global $floated_class;
     ?>   
 </nav>
 <div class="breadcrumbs bg-darkgray text-white">
-	<h6 class="container entry-title no-padding"><?php if(function_exists('bcn_display'))
+	<h6 class="container entry-title"><?php if(function_exists('bcn_display'))
 	{
 		bcn_display();
 	}?>

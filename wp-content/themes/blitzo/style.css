@@ -12,6 +12,13 @@ body, h1, h2, h3, h4, h5, h6, a{
   background-color: #000 !important;
 }
 
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+  .lg-fr, .md-fr {
+    float: right !important;
+  }
+}
+
 
 .fr{
   float: right !important;
@@ -75,28 +82,26 @@ label.filter > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
 
 
 /*Login Form */
-#member-login{
+/*#member-login{
   width: 320px !important;
   float: none !important;
   margin: 30px auto !important;
   background-color: #dfdfdf !important;
   padding: 50px !important;
-}
+}*/
 #member-login .swpm-login-form-submit{
     transition: all 0.5s !important;
     color: #fff !important;
-    background-color: #272727 !important;
-    border-color: #272727 !important;
-    width: 100% !important;
+    background-color: #FDB33C !important;
 }
-#member-login .swpm-label, .swpm-password-label{
+/*#member-login .swpm-label, .swpm-password-label{
   display: none !important;
 }
 #member-login .swpm-remember-checkbox input[type="checkbox"]{
     height: 14px !important;
     margin: 0px !important;
     padding: 0px !important;
-}
+}*/
 
 /*Join Us*/
 .swpm-payment-button{
@@ -185,6 +190,9 @@ p.powered-by a:hover{
 /*Newsletter Subscription*/
 .tnp-field label{
   display: none !important;
+}
+.tnp-widget input[type=email]{
+  border: 1px solid #ddd !important;
 }
 
 /*GENERAL*/
@@ -1666,7 +1674,7 @@ article.post {
 .page-title,
 .entry-title {
   color: #fff;
-  line-height: 47px; }
+}
 
 .entry-header .entry-header-background {
   background-color: #272727; }
@@ -1677,7 +1685,6 @@ article.post {
   color: #fff !important;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 20px 0px 20px;
   font-size: 1.6em; }
 .entry-header .taxonomy-description {
   position: relative;
